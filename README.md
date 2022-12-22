@@ -28,7 +28,7 @@ $P_1...P_n\mid=Z$
 Závěr bude logicky vyplývat, pokud v úsudku nikdy nebudou pravdivé všechny předpoklady a zároveň nepravdivý závěr = správná logická forma. Pro správnou logickou formu taktéž potřebujeme, aby všechny nutné předpoklady byly uvedené:
 
 Číslo 7 je prvočíslo - předpoklad
---
+- -
 Číslo 7 je dělitelné 1 a samo sebou - závěr
 
 *Logika je jako AI, odvozuje si skutečnosti jen z toho, co ví. Logika nebere v úvahu souvislost, mezi "být prvočíslem" a "být dělitelný 1 a sám sebou". Musí se ji vše strčit "pod nos".*
