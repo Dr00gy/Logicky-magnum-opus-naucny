@@ -6,4 +6,4 @@ Tento dokument je výcuc z prezentací pana M, které jsou vlastně výcucem ze 
 písmenko) Podkapitola <br />
 ? Nejasnosti a hnusy <br />
 ! Přímo věci ze zkoušek <br />
-* Jazyk logiky <br />
+/ Jazyk logiky <br />
