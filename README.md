@@ -20,6 +20,8 @@ Logika je věda o správném usuzování. Je to nástroj, který ověřuje platn
 
 Zabýváme se deduktivně platnými úsudky. Logické vyplývání závěru:
 $P_1...P_n\mid=Z$
+
+<br />
 <br />
 
 #### b) Logické vyplyvání, tedy, pravda / nepravda
@@ -29,6 +31,7 @@ Závěr bude logicky vyplývat, pokud v úsudku nikdy nebudou pravdivé všechny
 
 Reflexivita:
 
-<br /><br /><br />
+<br />
+<br />
 #### c) Platnost / správnost
 Monotónnost:
