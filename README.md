@@ -21,9 +21,14 @@ Logika je věda o správném usuzování. Je to nástroj, který ověřuje platn
 Zabýváme se deduktivně platnými úsudky. Logické vyplývání závěru:
 $P_1...P_n\mid=Z$
 
-
+<br /><br />
 #### b) Logické vyplyvání, tedy, pravda / nepravda
+Závěr bude logicky vyplývat, pokud v úsudku nikdy nebudou pravdivé všechny předpoklady a zároveň nepravdivý závěr = správná logická forma. Pro správnou logickou formu taktéž potřebujeme, aby všechny nutné předpoklady byly uvedené.
+<br /><br />
+*Logika je jako AI, odvozuje si skutečnosti jen z toho, co ví. Logika nebere v úvahu souvislost, mezi "být prvočíslem" a "být dělitelný 1 a sám sebou". Musí se ji vše strčit "pod nos".*
+<br /><br />
 Reflexivita:
 
+<br /><br /><br />
 #### c) Platnost / správnost
 Monotónnost:
