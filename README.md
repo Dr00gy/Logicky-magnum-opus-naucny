@@ -13,11 +13,11 @@ Spolu související části z kapitol budou zlinkovány. :)
 <br />
 <br />
 
-## 1) Základy
-### a) Co je vlastně logika?
+## **1) Základy**
+### **a) Co je vlastně logika?**
 
-### b) Logické vyplyvání, tedy, pravda / nepravda
+### **b) Logické vyplyvání, tedy, pravda / nepravda*
 #### b.1) Reflexivita
 
-### c) Platnost / správnost
+### **c) Platnost / správnost**
 #### c.1) Monotónnost
