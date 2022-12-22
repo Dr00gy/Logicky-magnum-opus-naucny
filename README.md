@@ -9,8 +9,8 @@ písmenko) Podkapitola <br />
 🟣 Jazyk logiky <br />
 
 Spolu související části z kapitol budou zlinkovány. :)
-<br />
-<br />
+
+
 
 ## 1) Základy
 #### a) Co je vlastně logika?
