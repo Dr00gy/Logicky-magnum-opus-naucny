@@ -15,11 +15,11 @@ Spolu související části z kapitol budou zlinkovány. :)
 ## 1) Základy
 #### a) Co je vlastně logika?
 Logika je věda o správném usuzování. Je to nástroj, který ověřuje platnost argumentů.
-<br />
+<br /><br />
 *Úsudek / argument: na základě předpokladů / premis můžeme usoudit, zda je závěr pravdivý. Závěr je nutně pravdivý, když jsou všechny premisy pravdivé.*
-<br />
+<br /><br />
 Zabýváme se deduktivně platnými úsudky. Logické vyplývání závěru:
-$P_1...P_n\mid=$
+$P_1...P_n\mid=Z$
 
 
 #### b) Logické vyplyvání, tedy, pravda / nepravda
