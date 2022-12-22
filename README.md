@@ -27,20 +27,23 @@ $P_1...P_n\mid=Z$
 ### b) Logické vyplyvání, tedy, pravda / nepravda
 Závěr bude logicky vyplývat, pokud v úsudku nikdy nebudou pravdivé všechny předpoklady a zároveň nepravdivý závěr = správná logická forma. Pro správnou logickou formu taktéž potřebujeme, aby všechny nutné předpoklady byly uvedené:
 
-Předpoklad: Číslo 7 je prvočíslo
-+---+
+Předpoklad: Číslo 7 je prvočíslo <br />
++---+ <br />
 Závěr: Číslo 7 je dělitelné 1 a samo sebou
-
 <br />
 (mimochodem, takto budou dál zobrazovány úsudky, jen bez označení předpokladů a závěrů)
 <br /><br />
+*Logika je jako AI, odvozuje si skutečnosti jen z toho, co ví. Logika nebere v úvahu souvislost, mezi "být prvočíslem" a "být dělitelný 1 a sám sebou". Musí se ji vše strčit "pod nos".* 
+<br />
 
-*Logika je jako AI, odvozuje si skutečnosti jen z toho, co ví. Logika nebere v úvahu souvislost, mezi "být prvočíslem" a "být dělitelný 1 a sám sebou". Musí se ji vše strčit "pod nos".*
+$P_1...P_n\mid=Z$
+<br />
+(pokud toto má pravdivé premisy a nepravidvý závěr, tak jde o spor)
 
-Reflexivita:
+**Reflexivita:**
 
 <br />
 <br />
 
 ### c) Platnost / správnost
-Monotónnost:
+**Monotónnost:**
