@@ -4,10 +4,9 @@ Tento dokument je výcuc z prezentací pana M, které jsou vlastně výcucem ze 
 # Značení
 číslo) Kapitola <br />
 písmenko) Podkapitola <br />
-písmenko.číslo) Podpodkapitola <br />
-? Nejasnosti a hnusy <br />
-! Přímo věci ze zkoušek <br />
-/ Jazyk logiky <br />
+🔴 Nejasnosti a hnusy <br />
+🔵 Přímo věci ze zkoušek <br />
+🟣 Jazyk logiky <br />
 
 Spolu související části z kapitol budou zlinkovány. :)
 <br />
@@ -15,9 +14,16 @@ Spolu související části z kapitol budou zlinkovány. :)
 
 ## 1) Základy
 #### a) Co je vlastně logika?
+Logika je věda o správném usuzování. Je to nástroj, který ověřuje platnost argumentů.
+<br />
+*Úsudek / argument: na základě předpokladů / premis můžeme usoudit, zda je závěr pravdivý. Závěr je nutně pravdivý, když jsou všechny premisy pravdivé.*
+<br />
+Zabýváme se deduktivně platnými úsudky. Logické vyplývání závěru:
+$P_1...P_n\mid=$
+
 
 #### b) Logické vyplyvání, tedy, pravda / nepravda
-###### b.1) Reflexivita
+Reflexivita:
 
 #### c) Platnost / správnost
-###### c.1) Monotónnost
+Monotónnost:
