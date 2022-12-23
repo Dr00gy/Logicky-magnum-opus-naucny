@@ -221,7 +221,7 @@ Funkce (zobrazení):
 * Bijekce: Párování každého prvku s každým z obou množin.
 
 * 🔵 Parciální funkce - nemá žádný obraz
-* Totální funkce - celá doména <br /><br /><br />
+* Totální funkce - celá doména, např. f(x) <br /><br /><br />
 
 
 
@@ -309,6 +309,8 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 ### 1) Pro formuli $p \supset (q \lor \neg q)$
 💚 Je splnitelná (v pravdivostní tabulce má aspoň jeden řádek na konci jedničku, tato formule je dokonce tautologie) <br />
 💚 Je ekvivalentní s formulí $(p \land q) \supset q$ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi)
+💚 Je ekvivalentní s formulí $q \supset (\neg p \lor p) $ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi)
+💥 Její negace je splnitelná formule (její negace je kontradikce, přotože původní je tautologie)
 
 ### 2) Pomocí rezoluční metody v PL1
 💚 Lze syntakticky ověřovat platnost Aristotelových sylogismů (jsou to pozůstatky PL) <br />
@@ -348,9 +350,9 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 💚 Je neplatný, protože formalizujeme-li jej, pak závěr není platný v libovolném modelu předpokladů
 
 ### 9) Které z tvrzení platí pro formuli ∀x[P(x) ⊃ Q(a,b)]
-💚 Je ekvivalentní s formulí [∀xP(x) ⊃ Q(a,b)] (kvantifikátor se přesouvá dovnitř jako u kroku 6 ve skolemizaci) <br />
-💥 Formule [∃xP(x) ⊃ Q(a,b)] z ní vyplývá. <br />
-💥 Je ekvivalentní s formulí [¬∃xP(x) ⋁ Q(a,b)] <br />
+💥 Je ekvivalentní s formulí [∀xP(x) ⊃ Q(a,b)] <br />
+💚 Formule [∃xP(x) ⊃ Q(a,b)] z ní vyplývá. <br />
+💚 Je ekvivalentní s formulí [¬∃xP(x) ⋁ Q(a,b)] (mají stejné modely) <br />
 💥 Je ekvivalentní s formulí [¬∃xP(x) ⊃ Q(a,b)] <br />
 💥 Její negací je formule ∀x[P(x) ⋀ ¬Q(a,b)] (není ani změněný kvantifikátor)
 
@@ -386,14 +388,14 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 14) Označte, které z následujících formulí jsou logicky pravdivé.
 💥 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] <br />
 💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
-💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] (přesouvání kvantifikátoru jako krok 6 skolemizace)
+💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] (přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!)
 💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)] (ekvivalentní úprava)
 
 ### 15) Označte, které z následujících formulí jsou logicky pravdivé.
 💥 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] <br />
-💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br /> (přesouvání kvantifikátoru jako krok 6 skolemizace)
+💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br /> (přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!)
 💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
-💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)] (negace, přesouvání kvantifikátoru jako krok 6 skolemizace)
+💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)] (negace, přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!)
 
 ### 16) Označte, které z následujících formulí jsou logicky pravdivé.
 💥 ∀xA(x) ≡ ∃xA(x) (není to samé) <br />
@@ -688,3 +690,30 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💚 Jedním z modelů formule (p ⊃ q) ∧ (q ∨ r) je valuace p=0, q=0, r=1. <br />
 💥 Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
+
+### 65) Pomocí rezoluční metody v PL
+💚 Lze syntaticky ověřovat platnost Aris. sylogismů. (fragment PL) <br />
+💚 Lze ověřit platnost libovol. Aris. sylogismu. (fragment PL) <br />
+💚 Lze nepřímo dokazovat platnost daného úsudku. <br />
+💚 Lze parciálně ověřit tautologičnost formule. <br />
+💚 Lze nepřímo dokázat tautologičnost formule. <br />
+💥 Ověřujeme, zda závěr vyplývá z nespočetné množiny předpokladů (toto je case diagramů nebo VL, ale určitě ne PL)
+
+### 66) Která z následujících tvrzení platí pro tuto situaci: množina A je podmnožinou množiny B
+💚 Rozdíl množiny A a B je prázdná množina <br />
+💚 Doplněk množiny B leží v doplňku množiny A (doplněk je odečítání druhý od prvního)
+
+### 67) Která z následujících tvrzení jsou pravdivá?
+💚 Následující relace nad celými čísly jsou totální funkce: sčítání, násobení, rozdíl (dělení je parciální) <br />
+💥 Zobrazení není relace (relace je zobrazení)
+
+### 68) Metoda Vennových diagramů
+💚 Je sémantická metoda, která ověřuje, zda je závěr platný ve všech modelech předpokladů <br />
+💚 Je sémant. metoda, se kterou se dá ověřit platnost Arist. sylogismů
+
+### 69) Které z tvrzení platí pro formuli ∀x∀y[P(x,y) ⊃ Q(f(x),y)]
+💚 V jejím modelu je binární relace P podmnožinou relace Q. <br />
+💚 Má jako svůj model například tuto interpretační strukturu: <br />
+U = N (množina přir. čísel), <br />
+P={[x,y]|x=y}, Q={[x,y]|x>=y}, <br />
+f' ... druhá mocnina.
