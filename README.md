@@ -310,6 +310,7 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 💚 Je splnitelná (v pravdivostní tabulce má aspoň jeden řádek na konci jedničku, tato formule je dokonce tautologie) <br />
 💚 Je ekvivalentní s formulí $(p \land q) \supset q$ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi) <br />
 💚 Je ekvivalentní s formulí $q \supset (\neg p \lor p) $ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi) <br />
+💚 Je logicky pravdivá, neboť konsekvent implikace je v každé valuaci výrokové proměnné q pravdivý. <br />
 💥 Její negace je splnitelná formule (její negace je kontradikce, přotože původní je tautologie)
 
 ### 2) Pomocí rezoluční metody v PL1
@@ -323,7 +324,8 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 ### 3) Sémantická metoda ve VL
 💚 Aplikovaná na daný úsudek ověřuje, zda závěr pravdivý ve všech modelech předpokladů (ano, sémantika je přece jenom o pravdivostních hodnotách výroků) <br />
 💚 Není metoda sémantických tabel (sémantické tabla, také tree proof, je grafická metoda) <br />
-💚 Je tabulková metoda a metoda sémantickým sporem (rozumíme pravdivostní tabulku nebo důkaz sporem)
+💚 Je tabulková metoda a metoda sémantickým sporem (rozumíme pravdivostní tabulku nebo důkaz sporem) <br />
+💚 Ověřuje platnost pomocí valuací výrokových proměnných.
 
 ### 4) Mějme množiny A = {1,2,3}, B = {b} a relaci R. Která z následujících tvrzení jsou platná?
 💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se jedná o surjektivní zobrazení <br />
@@ -347,7 +349,9 @@ f' ... druhá mocnina.
 
 ### 7) Která z následujících tvrzení platí pro tuto situaci: množina A je podmnožinou množiny B.
 💚 Rozdíl množiny A a B je prázdná množina (V množině A by nic nezbylo - dle definice podmnožiny) <br />
-💚 Doplněk množiny B leží v doplňku množiny A (doplněk je odečítání druhý od prvního)
+💚 Doplněk množiny B leží v doplňku množiny A (doplněk je odečítání druhý od prvního) <br />
+💚 Všechny prvky množiny A leží v množině B i v případě, že A je prázdná množina. <br />
+💚 Prvek leží v množině A pouze když leží v množině B.
 
 ### 8) Následující úsudek:
 Číslo 2 je nezáporné. <br />
@@ -380,6 +384,12 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Následující relace nad celými čísly jsou totální funkce: sčítání, násobení, rozdíl (dělení je parciální) <br />
 💚 Všechny podmnožiny relace A = {<1, 2>, <2, 4>, <3, 6>} jsou relacemi <br />
 💚 Funkce dělení na celých číslech je parciální <br />
+💚 Pokud v metodě přirozené dedukce zavedeme hypotézu H a odvodíme z ní formuli A, pak jako řádný krok důkazu musíme zavést formuli H ⊃ A <br />
+💚 Princip unifikace v obecné (…), kdy je |- ∀x Px⊃P(X/term) <br />
+💚 Metodou sémantických tabel využívá disjunktivních zákonu <br />
+💚 Správnost úsudku ověřujeme bez empirického zkoumání stavu světa <br />
+💚 Pro automatizované ověření platnosti úsudku je důležitá jeho správná formalizace <br />
+💚 Hilbertův kalkul je úplný kalkul stejně jako metoda přirozené dedukce. <br />
 💥 Funkce sčítání reálných čísel je pouze parciální <br />
 💥 Zobrazení není relace (relace je zobrazení)
 
@@ -464,6 +474,8 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 D je formule pravdivá v každém modelu množiny formulí {A, B, C}. <br />
 💚 A, B ⊨ D <br />
 💚 A, B, C, E ⊨ D <br />
+💚 Nemůže nastat případ, kdy formule A, B, C jsou v určené interpretaci pravdivé a formule D není <br />
+💚 Pokud je D nepravdivá formule, pak je alespoň jedna formule z A, B, C nepravdivá <br />
 💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. <br />
 💥 Množina formulí {A, B, C, ¬D} má model. <br />
 💥 A, B, C, D jsou nutně pravdivé
@@ -476,7 +488,9 @@ Judy je krásná. (platí pro PL a ne VL)
 
 ### 23) Určete, co platí pro klausuli:
 💚 Je to konečná disjunkce literálů. <br />
+💚 Je to elementární disjunkce. <br />
 💚 Neobsahuje konjunkci. <br />
+💚 Neobsahuje implikaci. <br />
 💥 Je to elementární konjunkce. <br />
 💥 Obsahuje pouze konjunkci literálů. <br />
 💥 Je to konečná konjunkce výrokových symbolů. <br />
@@ -511,17 +525,18 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Průnik dvou libovolných množin je vždycky neprázdný.
 
 ### 27) Která tvrzení platí:
-💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
 💚 Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou metodu nikoli rezoluční. <br />
-💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
-💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
-💥 Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu.
+💚 Formule VL má 2 na "n" možných valuací, kde "n" je počet výrokových proměnných v dané formuli. <br />
 💚 Pokud výrokově logický úsudek zapíšeme ve tvaru formule (P1 ∧ P2 ∧ … ∧ Pn) ⊃ Z, kde P1 až Pn jsou premisy a Z je závěr, pak je úsudek platný tehdy a jen tehdy, když je tato formule pravdivá v každé valuaci. <br />
-💚 Formule VL má 2 na "n" možných valuací, kde "n" je počet výrokových proměnných v dané formuli.
+💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
+💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
+💥 Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu.
 
 ### 28) Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
 💚 Je prázdná, pokud A neobsahuje alespoň jeden prvek z B nebo z C. <br />
 💚 Je prázdná vždy, když (B ∪ C) je prázdná. <br />
+💚 Je prázdná vždy když A je prázdná. <br />
 💚 Obsahuje maximálně |A| prvků. <br />
 💥 Obsahuje minimálně |B|+|C| prvků. <br />
 💥 Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná. <br />
