@@ -220,8 +220,8 @@ Funkce (zobrazení):
 * Injekce: Všechny prvky z levé množiny musí být použité a více prvků z pravé množiny nemůže vést k jednomu zprava.
 * Bijekce: Párování každého prvku s každým z obou množin.
 
-* Parciální funkce - 1 prvek k max 1 prvku - nanejvýš 1 obraz
-* Totální funkce - celá doména - víc jak 1 obraz <br /><br /><br />
+* 🔵 Parciální funkce - nemá žádný obraz
+* Totální funkce - celá doména <br /><br /><br />
 
 
 
@@ -443,300 +443,247 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak.
 
 ### 24) Určete, které z následujících tvrzení jsou pravdivé:
-💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
-💥 Predikátová logika druhého řádu je méně expresivní než PL1.
-💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným.
+💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. <br />
+💥 Predikátová logika druhého řádu je méně expresivní než PL1. <br />
+💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. <br />
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
 
 ### 25) Určete, které z následujících tvrzení jsou pravdivé:
-💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
-💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
-💥 Predikátová logika druhého řádu je méně expresivní než PL1.
+💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru. <br />
+💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. <br />
+💥 Predikátová logika druhého řádu je méně expresivní než PL1. <br />
 💥 Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
 
 ### 26) Určete, které z následujících tvrzení jsou pravdivé:
-💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným.
-💥 Predikátová logika druhého řádu je méně expresivní než PL1.
-💥 Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. <br />
+💥 Predikátová logika druhého řádu je méně expresivní než PL1. <br />
+💥 Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr. <br />
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
 
 ### 27) Nechť F je formule VL obsahující literály a, b, c, pak F:
-💥 je tautologií, pokud existuje alespoň jeden model
-💥 je sporná, pokud aspoň jedno ohodnocení není modelem
-💥 je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení
-💚 má celkem 8 ohodnocení
+💥 Je tautologií, pokud existuje alespoň jeden model. <br />
+💥 Je sporná, pokud aspoň jedno ohodnocení není modelem. <br />
+💥 Je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení. <br />
+💚 Má celkem 8 ohodnocení.
 
 ### 28) Pomocí Vennových diagramů provádíme v PL1:
-💚 ověřování platnosti libovolných úsudků v PL1
-💥 kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL
-💥 ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární
-💚 ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární
+💚 Ověřování platnosti libovolných úsudků v PL1. <br />
+💥 Kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL. <br />
+💥 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární. <br />
+💚 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární.
 
 ### 29) Nechť A, B ⊨ C a A, C ⊨ D, pak:
-💚 Formule A je pravdivá ve všech modelech množiny formulí {B, C}.
-💥 Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé.
-💥 Když není pravdivá formule D, tak není pravdivá ani A ani B.
+💚 Formule A je pravdivá ve všech modelech množiny formulí {B, C}. <br />
+💥 Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé. <br />
+💥 Když není pravdivá formule D, tak není pravdivá ani A ani B. <br />
 💚 Formule D je pravdivá v každém modelu množiny formulí {A, C}.
 
 ### 30) Nechť platí: A, B, C ⊨ D, pak:
-💚 D je formule pravdivá v každém modelu množiny formulí {A, B, C}.
-💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom.
-💚 A, B ⊨ D
+💚 D je formule pravdivá v každém modelu množiny formulí {A, B, C}. <br />
+💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. <br />
+💚 A, B ⊨ D <br />
 💥 Množina formulí {A, B, C, ¬D} má model.
 
 ### 31) Nechť platí: A, B, C ⊨ D, pak:
-💚 A, B, C, E ⊨ D
-💥 Množina formulí {A, B, C, ¬D} má model.
-💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom.
+💚 A, B, C, E ⊨ D <br />
+💥 Množina formulí {A, B, C, ¬D} má model. <br />
+💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. <br />
 💥 A, B, C, D jsou nutně pravdivé
 
 ### 32) Která z následujících tvrzení jsou správné?
-💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
-💥 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa.
-💥 Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. <br />
+💥 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa. <br />
+💥 Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. <br />
 💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
 
 ### 33) Určete, co platí pro klausuli:
-💥 je to elementární konjunkce
-💥 obsahuje pouze konjunkci literálů
-💥 je to konečná konjunkce výrokových symbolů
-💚 je to konečná disjunkce literálů
+💥 Je to elementární konjunkce. <br />
+💥 Obsahuje pouze konjunkci literálů. <br />
+💥 Je to konečná konjunkce výrokových symbolů. <br />
+💚 Je to konečná disjunkce literálů.
 
 ### 34) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
-💥 Z definice podmnožiny plyne, že ne každá množina je svou podmnožinou.
-💥 Množina A se rovná množině B, právě když každý prvek A je také prvkem B a ne naopak.
-💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. Správná odpověď
+💥 Z definice podmnožiny plyne, že ne každá množina je svou podmnožinou. <br />
+💥 Množina A se rovná množině B, právě když každý prvek A je také prvkem B a ne naopak. <br />
+💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. <br />
 💥 Prázdná množina není podmnožinou žádné množiny.
 
 ### 35) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
-💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. Správná odpověď
-💥 Množina A je podmnožinou množiny B, značíme A ⊆ B, právě tehdy a jen tehdy, když mají identické prvky.
-💥 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě když každý prvek A je také prvkem B.
+💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. <br />
+💥 Množina A je podmnožinou množiny B, značíme A ⊆ B, právě tehdy a jen tehdy, když mají identické prvky. <br />
+💥 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě když každý prvek A je také prvkem B. <br />
 💥 Množina A se rovná množině B, právě když každý prvek A je také prvkem B a ne naopak.
 
 ### 36) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
-💥 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě když každý prvek A je také prvkem B.
-💥 Množina A je podmnožinou množiny B, značíme A ⊆ B, právě tehdy a jen tehdy, když mají identické prvky.
-💚 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě tehdy, když každý prvek z A je také prvkem B a ne naopak.
+💥 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě když každý prvek A je také prvkem B. <br />
+💥 Množina A je podmnožinou množiny B, značíme A ⊆ B, právě tehdy a jen tehdy, když mají identické prvky. <br />
+💚 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě tehdy, když každý prvek z A je také prvkem B a ne naopak. <br />
 💥 Z definice plyne, že ne každá množina je svou podmnožinou.
 
-Která z následujících tvrzení platí pro rezoluční metodu ve VL?
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
-💚 Pro důkaz pomocí rezoluční metody je nutné převést formuli do KNF. Správná odpověď
+### 37) Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF. <br />
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF. <br />
+💚 Pro důkaz pomocí rezoluční metody je nutné převést formuli do KNF. <br />
 💚 V případě nepřímého důkazu tautologičnosti formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) pomocí rezoluční metody nedojde k odvození prázdné klausule.
 
-Která z následujících tvrzení platí pro rezoluční metodu ve VL?
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
-💚 Platnost úsudku nezávisí na interpretaci. Správná odpověď
+### 38) Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF. <br />
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF. <br />
+💚 Platnost úsudku nezávisí na interpretaci. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
 
-Která z následujících tvrzení platí pro rezoluční metodu ve VL?
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
-💚 V případě nepřímého důkazu tautologičnosti pomocí rezoluční metody formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) dojde k odvození prázdné klausule. Správná odpověď
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
+### 39) Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF. <br />
+💚 V případě nepřímého důkazu tautologičnosti pomocí rezoluční metody formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) dojde k odvození prázdné klausule. <br />
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
 
-Která z následujících tvrzení platí pro rezoluční metodu ve VL?
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
+### 40) Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF. <br />
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF. <br />
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF. <br />
 💚 Rezoluční metoda umožňuje prokázat platnost úsudku jak sporem, tak přímou metodou.
 
-Určete, které z následujících tvrzení je pravdivé:
-💥 Množiny jsou identické, právě když mají stejný počet prvků. X
-💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A.
-💚 Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách.
+### 41) Určete, které z následujících tvrzení je pravdivé:
+💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
+💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
+💚 Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách. <br />
 💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
 
-Určete, které z následujících tvrzení je pravdivé:
-a) Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její
-prvky patří i množina M. Správná odpověď
-b) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
-c) Množiny jsou identické, právě když mají stejný počet prvků.
-d) Průnik dvou libovolných množin je vždycky neprázdný.
+### 42) Určete, které z následujících tvrzení je pravdivé:
+💚 Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její prvky patří i množina M. <br />
+💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické. <br />
+💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
+💥 Průnik dvou libovolných množin je vždycky neprázdný.
 
-Určete, které z následujících tvrzení je pravdivé:
-a) Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně
-podmnožinou množiny A.
-b) Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její
-prvky patří i množina M. Správná odpověď
-c) Množiny jsou identické, právě když mají stejný počet prvků.
-d) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+### 43) Určete, které z následujících tvrzení je pravdivé:
+💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
+💚 Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její prvky patří i množina M. <br />
+💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
+💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
 
-Určete, které z následujících tvrzení je pravdivé:
-a) Množiny jsou identické, právě když mají stejný počet prvků.
-b) Pokud je množina A vlastní podmnožina množiny B, pak B má aspoň jeden prvek, který
-neleží v A. Správná odpověď
-c) Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně
-podmnožinou množiny A.
-d) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+### 44) Určete, které z následujících tvrzení je pravdivé:
+💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
+💚 Pokud je množina A vlastní podmnožina množiny B, pak B má aspoň jeden prvek, který neleží v A. <br />
+💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
+💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
 
-Určete, které z následujících tvrzení je pravdivé:
-a) Průnik dvou libovolných množin je vždycky neprázdný.
-b) Množiny jsou identické, právě když mají stejný počet prvků.
-c) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
-d) Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách. Správná odpověď
+### 45) Určete, které z následujících tvrzení je pravdivé:
+💥 Průnik dvou libovolných množin je vždycky neprázdný. <br />
+💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
+💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické. <br />
+💚 Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách.
 
-Která tvrzení platí:
-a) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. 
-b) Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou
-metodu nikoli rezoluční. Správná odpověď
-c) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
-normální konjunktivní formy. X
-d) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+### 46) Která tvrzení platí:
+💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
+💚 Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou metodu nikoli rezoluční. <br />
+💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
 
-Která tvrzení platí:
-a) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
-b) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
-c) Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou
-metodu nikoli rezoluční. Správná odpověď
-d) Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu. X
+### 47) Která tvrzení platí:
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
+💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
+💚 Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou metodu nikoli rezoluční. <br />
+💥 Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu.
 
-Která tvrzení platí:
-a) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
-normální konjunktivní formy. X
-b) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
-c) Pokud výrokově logický úsudek zapíšeme ve tvaru formule (P1 ∧ P2 ∧ … ∧ Pn) ⊃ Z, kde
-P1 až Pn jsou premisy a Z je závěr, pak je úsudek platný tehdy a jen tehdy, když je tato
-formule pravdivá v každé valuaci. Správná odpověď
-d) Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu. X
+### 48) Která tvrzení platí:
+💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
+💚 Pokud výrokově logický úsudek zapíšeme ve tvaru formule (P1 ∧ P2 ∧ … ∧ Pn) ⊃ Z, kde P1 až Pn jsou premisy a Z je závěr, pak je úsudek platný tehdy a jen tehdy, když je tato formule pravdivá v každé valuaci. <br />
+💥 Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu.
 
-Která tvrzení platí:
-a) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
-normální konjunktivní formy. X
-b) Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané
-formuli. Správná odpověď
-c) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
-d) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
+### 49) Která tvrzení platí:
+💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. X <br />
+💚 Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané formuli. <br />
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
+💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. 
 
-Která tvrzení platí:
-a) Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané
-formuli. Správná odpověď
-b) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
-c) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
-d) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
-normální konjunktivní formy.
+### 50) Která tvrzení platí:
+💚 Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané formuli. <br />
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
+💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X <br />
+💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy.
 
-Která tvrzení platí:
-a) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
-b) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
-normální konjunktivní formy. X
-c) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
-d) Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou
-metodu nikoli rezoluční. Správná odpověď
+### 51) Která tvrzení platí:
+💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
+💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
+💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
+💚 Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou metodu nikoli rezoluční.
 
-Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
-a) Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná.
-b) Je vždy prázdná.
-c) Je prázdná vždy, když (B ∪ C) je prázdná. Správná odpověď
-d) Je neprázdná, pokud každá z množin A, B, C je neprázdná.
+### 52) Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+💥 Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná. <br />
+💥 Je vždy prázdná. <br />
+💚 Je prázdná vždy, když (B ∪ C) je prázdná. <br />
+💥 Je neprázdná, pokud každá z množin A, B, C je neprázdná.
 
-Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
-a) Je neprázdná, pokud každá z množin A, B, C je neprázdná.
-b) Je vždy prázdná.
-c) Obsahuje minimálně |B|+|C| prvků.
-d) Je prázdná, pokud A neobsahuje alespoň jeden prvek z B nebo z C. Správná odpověď
+### 53) Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+💥 Je neprázdná, pokud každá z množin A, B, C je neprázdná. <br />
+💥 Je vždy prázdná. <br />
+💥 Obsahuje minimálně |B|+|C| prvků. <br />
+💚 Je prázdná, pokud A neobsahuje alespoň jeden prvek z B nebo z C.
 
-Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
-a) Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná.
-b) Je vždy prázdná.
-c) Obsahuje minimálně |B|+|C| prvků.
-d) Obsahuje maximálně |A| prvků. Správná odpověď
+### 54) Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+💥 Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná. <br />
+💥 Je vždy prázdná. <br />
+💥 Obsahuje minimálně |B|+|C| prvků. <br />
+💚 Obsahuje maximálně |A| prvků.
 
+### 55) Určete, které z následujících tvrzení jsou pravdivé:
+💥 Funkce je libovolná podmnožina kartézského součinu. <br />
+💥 Relace je pouze zprava jednoznačné zobrazení. <br />
+💥 Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má minimálně jeden obraz. (parciální = nemá žádný obraz)<br />
+💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Funkce je libovolná podmnožina kartézského součinu.
-b) Relace je pouze zprava jednoznačné zobrazení.
-c) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
-minimálně jeden obraz.
-d) Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná
-Parciální = nemá žádný obraz
+### 56) Určete, které z následujících tvrzení jsou pravdivé:
+💥 Funkce je libovolná podmnožina kartézského součinu. <br />
+💥 Relace, která není celým kartézským součinem je funkce. <br />
+💥 Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má minimálně jeden obraz. <br />
+💚 Relace použité pro interpretaci v PL1 musí být homogenní.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Funkce je libovolná podmnožina kartézského součinu.
-b) Relace, která není celým kartézským součinem je funkce.
-c) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
-minimálně jeden obraz.
-d) Relace použité pro interpretaci v PL1 musí být homogenní. Správná odpověď
+### 57) Určete, které z následujících tvrzení jsou pravdivé:
+💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná odpověď <br />
+💥 Relace, která není celým kartézským součinem je funkce. <br />
+💥 Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má minimálně jeden obraz. <br />
+💥 Funkce je libovolná podmnožina kartézského součinu.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná
-odpověď
-b) Relace, která není celým kartézským součinem je funkce.
-c) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
-minimálně jeden obraz.
-d) Funkce je libovolná podmnožina kartézského součinu.
+### 58) Určete, které z následujících tvrzení jsou pravdivé:
+💥 Funkce je libovolná podmnožina kartézského součinu. <br />
+💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. <br />
+💥 Relace je pouze zprava jednoznačné zobrazení. <br />
+💥 Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má minimálně jeden obraz.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Funkce je libovolná podmnožina kartézského součinu.
-b) Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná
-odpověď
-c) Relace je pouze zprava jednoznačné zobrazení.
-d) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
-minimálně jeden obraz.
+### 59) Určete, které z následujících tvrzení jsou pravdivé:
+💥 Relace je pouze zprava jednoznačné zobrazení. <br />
+💥 Funkce je libovolná podmnožina kartézského součinu. <br />
+💥 Relace, která není celým kartézským součinem je funkce. <br />
+💚 PL1 pracuje pouze s totálními funkcemi, tj. takovými, kdy každý vzor má právě jeden obraz.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Relace je pouze zprava jednoznačné zobrazení.
-b) Funkce je libovolná podmnožina kartézského součinu.
-c) Relace, která není celým kartézským součinem je funkce.
-d) PL1 pracuje pouze s totálními funkcemi, tj. takovými, kdy každý vzor má právě jeden
-obraz. Správná odpověď
+### 60) Pomocí Vennových diagramů provádíme v PL1:
+💥 Ověřování platnosti libovolných úsudků v PL1. <br />
+💥 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární. <br />
+💚 Ověřování platnosti úsudků, které jsou složeny ze tří subjekt-predikátových (S-P) výroků (kde S i P jsou nějaké vlastnosti). <br />
+💥 Ověřování platnosti úsudků v logikách vyšších řádů než PL1.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
-b) Predikátová logika druhého řádu je méně expresivní než PL1. X
-c) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni
-adekvátně formalizovat i ve VL tak, že zůstane platným.
-d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+### 61) Určete, co platí pro klausuli:
+💥 Je to elementární konjunkce. <br />
+💥 Obsahuje pouze konjunkci literálů. <br />
+💥 Je to konečná konjunkce výrokových symbolů. <br />
+💚 Je to konečná disjunkce literálů.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
-b) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
-c) Predikátová logika druhého řádu je méně expresivní než PL1. X
-d) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+### 62) Určete, co platí pro klausuli:
+💥 Je to elementární konjunkce. <br />
+💥 Obsahuje pouze konjunkci literálů. <br />
+💚 Neobsahuje konjunkci. <br />
+💥 Ibsahuje pouze výrokové proměnné.
 
-Určete, které z následujících tvrzení jsou pravdivé:
-a) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni
-adekvátně formalizovat i ve VL tak, že zůstane platným.
-b) Predikátová logika druhého řádu je méně expresivní než PL1. X
-c) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
-d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+### 63) Co následujícího platí?
+💥 Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
+💚 Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r).<br />
+💥 Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
+💥 Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely. 
 
-Nechť F je formule VL obsahující literály a, b, c, pak F:
-a) je tautologií, pokud existuje alespoň jeden model
-b) je sporná, pokud aspoň jedno ohodnocení není modelem
-c) je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení
-d) má celkem 8 ohodnocení
-
-Pomocí Vennových diagramů provádíme v PL1:
-a) ověřování platnosti libovolných úsudků v PL1
-b) ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární
-c) ověřování platnosti úsudků, které jsou složeny ze tří subjekt-predikátových (S-P) výroků
-(kde S i P jsou nějaké vlastnosti) Správná odpověď
-d) ověřování platnosti úsudků v logikách vyšších řádů než PL1
-
-Určete, co platí pro klausuli:
-a) je to elementární konjunkce X
-b) obsahuje pouze konjunkci literálů X
-c) je to konečná konjunkce výrokových symbolů
-d) je to konečná disjunkce literálů
-
-Určete, co platí pro klausuli:
-a) je to elementární konjunkce
-b) obsahuje pouze konjunkci literálů
-c) neobsahuje konjunkci Správná odpověď
-d) obsahuje pouze výrokové proměnné
-
-Co následujícího platí?
-a) Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
-b) Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r). Správná odpověď
-c) Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r).
-d) Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely.
-
-Co následujícího platí?
-a) Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r).
-b) Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
-c) Jedním z modelů formule (p ⊃ q) ∧ (q ∨ r) je valuace p=0, q=0, r=1. Správná odpověď
-d) Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
+### 64) Co následujícího platí?
+💥 Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
+💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
+💚 Jedním z modelů formule (p ⊃ q) ∧ (q ∨ r) je valuace p=0, q=0, r=1. <br />
+💥 Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
