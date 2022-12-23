@@ -7,6 +7,9 @@ písmenko) Podkapitola <br />
 🔴 Nejasnosti a hnusy (hlavně u otázek)<br />
 🔵 Přímo věci ze zkoušek <br />
 🟣 Jazyk logiky <br />
+💚 Správná odpověď (otázky) <br />
+💥 Špatná odpověď (otázky) <br />
+[Link / skok rovnou k otázkám](#otázky) <br />
 
 Spolu související části z kapitol budou zlinkovány. :) <br /><br />
 
@@ -113,7 +116,7 @@ Význam jednoduchých výroků redukuje VL na pravdu (1) a nepravdu (0). Výroko
 **Tautologie:** Každé ohodnocení je modelem. <br />
 **Nesplnitelná formule / kontradikce:** Nemá ani jeden model. <br />
 **Splnitelná množina formulí:** Existuje-li ohodnocení, které je modelem každé formule.
-[Splnitelnost v PL](#d-splnitelnost--model-PL1) <br />
+[Splnitelnost v PL](#d-splnitelnost--model-PL1) <br /><br />
 [Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
 
 
@@ -127,7 +130,7 @@ Každé formuli přísluší právě jedna pravdivostní funkce (pravdivostní t
 
 ### e) Rezoluční metoda ve VL - basics
 Nechť I je literál (i), z formule $(A \cup I) \cap (B \cup \neg I)$ odvoď $(A \cup B)$. <br />
-Pokud je $(A \cup I) \cap (B \cup \neg(I))$ pravdivá, tak oba disjunkty (také klausule) musí být taky pravdivé (kvůli té konjunkci) $(A \cup I) = 1$  $(B \cup \neg(I)) = 1$ <br />
+Pokud je $(A \cup I) \cap (B \cup \neg I)$ pravdivá, tak oba disjunkty (také klausule) musí být taky pravdivé (kvůli té konjunkci) $(A \cup I) = 1$  $(B \cup \neg(I)) = 1$ <br />
 $(A \cup B)$ je pravdivá v modelu původní formule (díky disjunkcím je funkce pravdivá v jakémkoliv ohodnocení pro I (0, 1). Zachovala se pravdivost, ale není to přechod k ekvivalentní formuli. Důkaz byl proveden pro jakýkoliv model. Platí, že konjunktivní rozšiření formule o náš rezolvent (A U B) nemění pravdivostní funkci formule: $(A \cup I) \cap (B \cup \neg I) \cap (A \cup B)$ <br />
 
 Jinými slovy: Pokud je původní formule pravdivá při nějaké valuaci a pokud je formule vycházející z původní formule pravdivá ve všech možných případech, tak vycházející formule je pravdivá v modelu původní formule. Pravdivostní funkce původní formule se nezmění, pokud vycházející formuli konjunktivně přidáme k té původní formuli. <br />
@@ -145,7 +148,7 @@ Konjunktivní normální forma (KNF) se v rezoluční metodě nazývá klauzulá
 * Důkaz, že množina formulí je nesplnitelná: musíme u všech dokázat, že to jsou kontradikce. <br />
 
 Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Používané pro AI. Máme formuli, na kterou používáme rezoluční metodu. Každé jeji upravené části odvozují další skutečnosti (cv. 4, příklad 2. v RES).
-[Splnitelnost v PL](#d-splnitelnost--model-PL1) <br />
+[Splnitelnost v PL](#d-splnitelnost--model-PL1) <br /><br />
 [Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br /><br /><br />
 
 
@@ -251,7 +254,7 @@ R(x, y) - y je druhý prvek pro člen univerza, na y je aplikovaná funkce:
 f(y) - x^(2)
 PLATÍ! Pro každý člen univerza existuje nějaký prvek, který není stejný jako x a je to jeho druhá mocnina.
 (další příklady sémantiky a modelů jsou v 6. prezentaci, 20. slide a dál nebo ve CV.)
-[Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br />
+[Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br /><br />
 [Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
 
 
@@ -287,5 +290,5 @@ Všechny pojmy S, P jsou zde neprázdné. <br />
 Aristetolova logika - logický čtverec might be helpful. <br />
 Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br />
 
-## OTÁZKY!!
+## OTÁZKY!! (vysvětlení k individuálním odpovědím v závorce)
 
