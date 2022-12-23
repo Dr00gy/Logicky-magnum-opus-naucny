@@ -119,7 +119,6 @@ Význam jednoduchých výroků redukuje VL na pravdu (1) a nepravdu (0). Výroko
 **Nesplnitelná formule / kontradikce:** Nemá ani jeden model. <br />
 **Splnitelná množina formulí:** Existuje-li ohodnocení, které je modelem každé formule.
 [Splnitelnost v PL](#d-splnitelnost--model-PL1) <br />
-
 [Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
 
 
@@ -152,7 +151,6 @@ Konjunktivní normální forma (KNF) se v rezoluční metodě nazývá klauzulá
 
 Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Používané pro AI. Máme formuli, na kterou používáme rezoluční metodu. Každé jeji upravené části odvozují další skutečnosti (cv. 4, příklad 2. v RES).
 [Splnitelnost v PL](#d-splnitelnost--model-PL1) <br />
-
 [Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br /><br /><br />
 
 
@@ -219,7 +217,10 @@ Funkce (zobrazení):
 
 * Surjekce: Všechny prvky z "pravé" množiny musí být použité a více prvků z "levé množiny" může vést k jednomu prvku zprava.
 * Injekce: Všechny prvky z levé množiny musí být použité a více prvků z pravé množiny nemůže vést k jednomu zprava.
-* Bijekce: Párování každého prvku s každým z obou množin. <br /><br /><br />
+* Bijekce: Párování každého prvku s každým z obou množin.
+
+* Parciální funkce - 1 prvek k max 1 prvku - nanejvýš 1 obraz
+* Totální funkce - celá doména - víc jak 1 obraz <br /><br /><br />
 
 
 
@@ -255,11 +256,10 @@ Např.: U - všichni lidi
 R(x) - x jsou členi univerza, třeba: jsou savci. PLATÍ!
 U - přirozená čísla bez nuly a jedničky
 R(x, y) - y je druhý prvek pro člen univerza, na y je aplikovaná funkce:
-f(y) - x^(2)
+f(y) - $x^{2}$
 PLATÍ! Pro každý člen univerza existuje nějaký prvek, který není stejný jako x a je to jeho druhá mocnina.
 (další příklady sémantiky a modelů jsou v 6. prezentaci, 20. slide a dál nebo ve CV.)
 [Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br />
-
 [Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
 
 
@@ -295,5 +295,147 @@ Všechny pojmy S, P jsou zde neprázdné. <br />
 Aristetolova logika - logický čtverec might be helpful. <br />
 Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br />
 
-## OTÁZKY!! (vysvětlení k individuálním odpovědím v závorce)
 
+## SLOVA PANOVA (potvrzeno panem M)
+*Jestliže jsou premisy i závěr pravdivý, pak je usudek platný.* NEPLATÍ!! 💥 <br /><br /><br />
+
+
+
+## OTÁZKY!! (vysvětlení k individuálním odpovědím v závorce, špatné odpovědi mohou chybět, ale nejdůležitější jsou stejně odpovědi správné)
+[Link / skok úplně nahoru](#předmluva) <br />
+
+### 1) Pro formuli $p \supset (q \lor \neg q)$
+💚 Je splnitelná (v pravdivostní tabulce má aspoň jeden řádek na konci jedničku, tato formule je dokonce tautologie) <br />
+💚 Je ekvivalentní s formulí $(p \land q) \supset q$ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi)
+
+### 2) Pomocí rezoluční metody v PL1
+💚 Lze syntakticky ověřovat platnost Aristotelových sylogismů (jsou to pozůstatky PL) <br />
+💚 Lze nepřímo dokazovat platnost daného úsudku (rezolučka umí dokazovat přímo i nepřímo)
+
+### 3) Sémantická metoda ve VL
+💚 Aplikovaná na daný úsudek ověřuje, zda závěr pravdivý ve všech modelech předpokladů (ano, sémantika je přece jenom o pravdivostních hodnotách výroků) <br />
+💚 Není metoda sémantických tabel (sémantické tabla, také tree proof, je grafická metoda) <br />
+💚 Je tabulková metoda a metoda sémantickým sporem (rozumíme pravdivostní tabulku nebo důkaz sporem)
+
+### 4) Mějme množiny A = {1,2,3}, B = {b} a relaci R. Která z následujících tvrzení jsou platná?
+💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se jedná o surjektivní zobrazení <br />
+💚 Pokud relace R je definována jako podmnožina B x A $\cup$ A x B a jedná se o symetrickou relaci. Pokud je v relaci R dvojice [1,b], pak se v relaci R nachází rovněž dvojice [b,1] <br />
+💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se nejedná o injektivní zobrazení
+
+### 5) Které z tvrzení platí pro formuli $\forall x \forall y$ [P(x,y) $\supset$ Q(f(x),y)]
+💚 V jejím modelu je binární relace P podmnožinou relace Q (binární relace má dva argumenty - zde "y", které je u obou stejné a "x", které se v Q aplikuje do funkce) <br />
+(TO DÁLE ZNAMENÁ:) <br />
+💚 Je splnitelná, neboť existuje její model.
+
+### 6) Metoda Vennových diagramů
+💚 Je sémantická metoda, která ověřuje, zda závěr je platný ve všech modelech předpokladů <br />
+💚 Je sémantická metoda, kterou lze ověřit platnost Aristotelových sylogismů (sémantické metody pro PL a Aristetolovu logiku obsahují Venn. Diagramy) <br />
+💚 Používá se pro ověření platnosti úsudků v PL1 s maximálně třemi jednomístnými predikáty (ve cvičeních min. 2 množiny a max 3) <br />
+💚 Je založena na naivní teorii množin (predikáty jsou podobné množinám)
+
+### 7) Která z následujících tvrzení platí pro tuto situaci: množina A je podmnožinou množiny B.
+💚 Rozdíl množiny A a B je prázdná množina (V množině A by nic nezbylo - dle definice podmnožiny)
+
+### 8) Následující úsudek:
+Číslo 2 je nezáporné. <br />
+Číslo 2 je prvočíslo. <br />
+◻️◻️◻️ <br />
+Číslo 2 je dělitelné samo sebou beze zbytku. <br />
+💚 Je neplatný, protože závěr z premis nevyplývá (logika je jako AI, nechápe souvislost mezi tím, že 2 je „členem prvočísel“ a tím, že prvočísla, tedy i 2, jsou dělitelné samo sebou beze zbytku) <br />
+(TO ZNAMENÁ ŽE:) <br />
+💚 Je neplatný, protože formalizujeme-li jej, pak závěr není platný v libovolném modelu předpokladů
+
+### 9) Které z tvrzení platí pro formuli ∀x[P(x) ⊃ Q(a,b)]
+💚 Je ekvivalentní s formulí [∀xP(x) ⊃ Q(a,b)]
+💥 Formule [∃xP(x) ⊃ Q(a,b)] z ní vyplývá.
+💥 Je ekvivalentní s formulí [¬∃xP(x) ⋁ Q(a,b)]
+💥 Je ekvivalentní s formulí [¬∃xP(x) ⊃ Q(a,b)]
+💥 Její negací je formule ∀x[P(x) ⋀ ¬Q(a,b)])
+
+### 10) Pomocí rezoluční metody ve VL
+💚 Lze ověřit, zda negovaná formule je kontradikce. <br />
+💚 Lze nepřímo dokázat tautologičnost formule. <br />
+💚 Lze ověřit tautologičnost formule a platnost úsudku VL. <br />
+💥 Lze ověřit, že tento úsudek je platný: <br />
+Všechny opice jsou krásné, <br />
+Judy je opice <br />
+◻️◻️◻️ <br />
+Judy je krásná. (platí pro PL a ne VL)
+
+### 11)	Která z následujících tvrzení jsou pravdivá?
+💚 Relace je podmnožina kartézského součinu <br />
+💚 Všechny podmnožiny relace A = {<1, 2>, <2, 4>, <3, 6>} jsou relacemi <br />
+💚 Funkce dělení na celých číslech je parciální <br />
+💥 Funkce sčítání reálných čísel je pouze parciální
+
+12)	Které z následujících systémů spojek ve VL jsou úplné:
+💥 disjunkce, implikace
+💚 negace, implikace Správná odpověď
+💥 konjunkce, implikace
+💥 konjunkce, disjunkce, implikace, ekvivalence
+
+13) Které z následujících systémů spojek ve VL jsou úplné:
+💥 konjunkce, disjunkce, implikace, ekvivalence
+💥 konjunkce, implikace
+💥 konjunkce, disjunkce
+💚 negace, disjunkce Správná odpověď
+(víme, že {¬, ∧, ∨, ⇒} tvoří úplný systém logických spojek.. nyní si stačí uvědomit, že platí: (a ⇒ b) |=| (¬a ∨ b) a (a ∧ b) |=| ¬(¬a ∨ ¬b).. 3. množina ∆ = {¬, ∧} tvoří úplný systém logických spojek - jediné správné kombinace jsou: {¬,→}, {¬,∧}, {¬,∨}, SOURCE: MUNI)
+
+14) Označte, které z následujících formulí jsou logicky pravdivé.
+💚 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)]
+💚 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))]
+💥 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] d) ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)]
+
+15) Označte, které z následujících formulí jsou logicky pravdivé.
+💚 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)]
+💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)]
+💚 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))]
+💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)]
+
+16) Označte, které z následujících formulí jsou logicky pravdivé.
+💥 ∀xA(x) ≡ ∃xA(x)
+💥 ∀x∀yA(x,y) ⊃ ∀x∀y¬A(x,y)
+💥 A(x/y) ⊃ ∃xA(x) (term t je substituovatelný za proměnnou x)
+💥 ∃x∀yA(x,y) ≡ ∃y∀xA(x,y)
+
+17) Určete, které z následujících úsudků jsou logicky platné:
+a) Každý filozof je líný Petr není filozof. Petr není líny.
+b) Venku prší. Karel je veselý. Venku prší.
+c) Každý pes je zelený. Alík není pes. Alík není zelený.
+d) Venku sněží. Svítí slunce. Venku nesněží.
+
+Složené výroky ve VL jsou:
+a) Sněhová královna vládne v říši sněhu a ledu.
+b) Mrzne až praští.
+c) Dnes sněží a mrzne.
+d) Z čerstvě napadaného sněhu se velmi dobře budují velké hromady.
+
+Složené výroky ve VL jsou:
+a) Sněhová královna vládne v říši sněhu a ledu.
+b) Z čerstvě napadaného sněhu se velmi dobře budují velké hromady.
+c) Lední hokej je velmi zajímavý sport pro všechny věkové kategorie.
+d) Jestliže bude sněžit, tak si postavíme sněhuláka.
+
+Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule ∀x[P(x) ⊃ Q(x)] ⊃ [∀xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU = U, je také QU = U. b) Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. c) Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. d) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. b) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. c) Formule ∃x[P(x) ∨ Q(x)] ≡ [∃xP(x) ∨ ∃xQ(x)] je logicky pravdivá, protože je-li (PU ∪ QU) neprázdné, pak musí být PU nebo QU neprázdné množiny a naopak. d) Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. b) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. c) Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. d) Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je log
+
+Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. b) Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. c) Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné. d) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak.
+
+Určete, které z následujících tvrzení jsou pravdivé: a) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. b) Predikátová logika druhého řádu je méně expresivní než PL1. X c) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+
+Určete, které z následujících tvrzení jsou pravdivé: a) Správnost úsudku je dána pouze logickou strukturou premis a závěru. b) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. c) Predikátová logika druhého řádu je méně expresivní než PL1. X d) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+
+Určete, které z následujících tvrzení jsou pravdivé: a) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. b) Predikátová logika druhého řádu je méně expresivní než PL1. X c) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr. d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+
+Nechť F je formule VL obsahující literály a, b, c, pak F: a) je tautologií, pokud existuje alespoň jeden model b) je sporná, pokud aspoň jedno ohodnocení není modelem c) je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení d) má celkem 8 ohodnocení
+
+Pomocí Vennových diagramů provádíme v PL1: a) ověřování platnosti libovolných úsudků v PL1 b) kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL c) ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární d) ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární
+
+Nechť A, B ⊨ C a A, C ⊨ D, pak: a) Formule A je pravdivá ve všech modelech množiny formulí {B, C}. b) Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé. c) Když není pravdivá formule D, tak není pravdivá ani A ani B. d) Formule D je pravdivá v každém modelu množiny formulí {A, C}.
+
+Nechť platí: A, B, C ⊨ D, pak: a) D je formule pravdivá v každém modelu množiny formulí {A, B, C}. b) Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. c) A, B ⊨ D d) Množina formulí {A, B, C, ¬D} má model.
+
+Nechť platí: A, B, C ⊨ D, pak: a) A, B, C, E ⊨ D b) Množina formulí {A, B, C, ¬D} má model. c) Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. d) A, B, C, D jsou nutně pravdivé
+
+Která z následujících tvrzení jsou správné? a) Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. b) Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa. c) Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. d) Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+
+Určete, co platí pro klausuli: a) je to elementární konjunkce X b) obsahuje pouze konjunkci literálů X c) je to konečná konjunkce výrokových symbolů d) je to konečná disjunkce literálů
