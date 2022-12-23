@@ -1,5 +1,5 @@
 # Předmluva
-Tento dokument je výcuc z prezentací pana M, které jsou vlastně výcucem ze skript. Ostatní dokumenty byly moc špatné, tak jsem se rozhodl udělat vlastní.
+Tento dokument je výcuc z prezentací pana M, které jsou vlastně výcucem ze skript. Ostatní pomocné dokumenty byly moc špatné, tak jsem se rozhodl udělat vlastní.
 
 # Značení
 číslo) Kapitola <br />
@@ -18,7 +18,6 @@ Logika je věda o správném usuzování. Je to nástroj, který ověřuje platn
 
 Zabýváme se deduktivně platnými úsudky. Logické vyplývání závěru:
 $P_1...P_n\models Z$ <br /><br /><br />
-
 
 
 ### b) Logické vyplyvání, tedy, pravda / nepravda
@@ -44,7 +43,6 @@ V přímém způsobu nepředpokládáme opak (tedy, že úsudek je neplatný). M
 Všechny úsudky se stejnou logickou formou jako nějaký platný úsudek jsou platné. Tedy, za proměnné (např. p, q, r) můžeme dosadit jiné proměnné a nic to nezmění. <br /> $(p \cap q) \supset r$ <br /><br /><br />
 
 
-
 ### c) Platnost / správnost
 Úsudek může být platný a zároveň jeho závěr nepravdivý - avšak jedna premisa úsudku bude nutně nepravdivá. Úsudek je logicky platný pokud ve všech interpretacích, kde máme pravdivé premisy, máme pravdivý i závěr. <br />
 
@@ -67,9 +65,10 @@ Je to samé co: <br /><br />
 &nbsp;&nbsp; E <br /> [Platnost / správnost ve výrokové logice](#g-správnost-vl-v-rezolučce) <br /><br /><br />
 
 
-
 ### d) Spojitost mezi log. vyplýváním a platností
 Logické vyplývání (pravda, nepravda) můžeme dokazovat přes platnost úsudku. Úsudek je platný, pokud je formule pravdivá, ale může být také platný, pokud závěr a jedna premisa je nepravdivá. Neplatný úsudek se skládá z nepravdivého závěru, jen když žádná z premis není nepravdivá. <br /><br /><br />
+
+
 
 ## 2) VL - výroková logika
 ### a) Základ
@@ -101,18 +100,22 @@ Význam jednoduchých výroků redukuje VL na pravdu (1) a nepravdu (0). Výroko
 *	Negovaná ekvivalence neboli XOR: "Buď a nebo", "... a nebo...". $\neg(p \equiv q)$ <br /><br /><br />
 
 
-
 ### b) Sémantika (význam) formulí
 * Pravdivostní ohodnocení (valuace) výrokových symbolů - 1 nebo 0, tedy pravda nebo nepravda.
 * Pravdivostní funkce - pro každé ohodnocení výrokových symbolů přiřazuje formuli jeji pravdivostní hodnotu. <br />
-(popisujeme zde pravdivostní tabulku, respektive, její proměnné a konečnou pravdivostní hodnotu formule na koncci řádku) <br /><br /><br />
+(popisujeme zde pravdivostní tabulku, respektive, její proměnné a konečnou pravdivostní hodnotu formule na koncci řádku)
+[Sémantika v PL](#c-sémantika-pl1) <br /><br /><br />
+
 
 ### c) Splnitelnost formulí (tautologie, kontradikce, model)
 **Model:** Ohodnocení proměnných, kde formule "A" je pravdivá - 1 na konci řádku v pravdivostní tabulce (u cvičení: kroužkujeme proměnné) <br />
 **Splnitelná formule:** Má aspoň jeden model. Tautologie je zvláštní případ splnitelné formule. <br />
 **Tautologie:** Každé ohodnocení je modelem. <br />
 **Nesplnitelná formule / kontradikce:** Nemá ani jeden model. <br />
-**Splnitelná množina formulí:** Existuje-li ohodnocení, které je modelem každé formule. [Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
+**Splnitelná množina formulí:** Existuje-li ohodnocení, které je modelem každé formule.
+[Splnitelnost v PL](#d-splnitelnost--model-PL1) <br />
+[Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
+
 
 ### d) Normální formy
 Každé formuli přísluší právě jedna pravdivostní funkce (pravdivostní tabulka). Každé jedné takové funkci pak přísluší nekonečně mnoho formulí, které jsou navzájem ekvivalentní (A <=> B, A <=> C, B <=> D, C <=> D, atd.). DŮLEŽITÉ!! Nesmíme plést tyto ekvivalence: <=> (značí úpravu) s $\equiv$ (značí stejné modely / splnitelnost - u otázek na to opět upozorním)!! Platí však A <=> B, právě když formule $A \equiv B$ je tautologie. <br />
@@ -135,12 +138,16 @@ Konjunktivní normální forma (KNF) se v rezoluční metodě nazývá klauzulá
 *	R0(F) = Ri(F) = R(Ri-1(F)) - rezoluční uzávěr formule F.
 *	Platí, že: Ri(F) <=> F <br /><br /><br />
 
+
 ### f) Splnitelnost VL v rezolučce
 * Důkaz, že A je kontradikce (nesplnitelná): existuje n takové, že Rn(A) obsahuje prázdnou klauzuli. Tedy, existuje rezoluční proces, který nás dostane k prázdné klauzuli.
 * Nepřímý důkaz (naše "normální" rezoluční metoda), že A je tautologie: neg(A) je kontradikce.
 * Důkaz, že množina formulí je nesplnitelná: musíme u všech dokázat, že to jsou kontradikce. <br />
 
-Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Používané pro AI. Máme formuli, na kterou používáme rezoluční metodu. Každé jeji upravené části odvozují další skutečnosti (cv. 4, příklad 2. v RES). [Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br /><br /><br />
+Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Používané pro AI. Máme formuli, na kterou používáme rezoluční metodu. Každé jeji upravené části odvozují další skutečnosti (cv. 4, příklad 2. v RES).
+[Splnitelnost v PL](#d-splnitelnost--model-PL1) <br />
+[Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br /><br /><br />
+
 
 ### g) Správnost VL v rezolučce
 * Důkaz správnosti úsudku $A_1...A_n\models Z$ (rezolučkama)
@@ -158,13 +165,14 @@ Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Použ�
 * Splnitelnost [Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model)
 * Sémantika [Sémantika ve VL](#b-sémantika-význam-formulí) <br /><br /><br />
 
+
+
 ## 3) Množiny
 ### a) Co je množina?
 Množina je soubor prvků a je svými prvky plně určena; množinu s prvky a, b, c značíme: {a, b, c}. <br />
 Prvkem množiny může být opět množina. Množina také nemusí mít žádné prvky: $\varnothing$. <br />
 Příklady množin: $\varnothing$, {a,b}, {b,a},{a,b,a}, {{a,b}}, {a,{b,a}}, { $\varnothing$ , { $\varnothing$ },{{ $\varnothing$ }}} <br />
 Množiny jsou identické, právě tehdy a jen tehdy, když mají stejné prvky (princip extenzionality). <br /><br /><br />
-
 
 
 ### b) Důležité vztahy a operace (a můžeme nahradit čímkoliv, jen nechat závorky a symboly)
@@ -192,7 +200,6 @@ Množiny jsou identické, právě tehdy a jen tehdy, když mají stejné prvky (
 |A| menší nebo rovno |B| právě když existuje injekce f (níže): A $\to$ B <br /><br /><br />
 
 
-
 ### c) Relace a funkce
 * Relace mezi množinami A, B je podmnožina Kartézského součinu A x B. Používa n-tice.
 * Notace: <a,b> $\in$ R značíme také R(a,b) nebo a R b.
@@ -207,6 +214,8 @@ Funkce (zobrazení):
 * Injekce: Všechny prvky z levé množiny musí být použité a více prvků z pravé množiny nemůže vést k jednomu zprava.
 * Bijekce: Párování každého prvku s každým z obou množin. <br /><br /><br />
 
+
+
 ## 4) Predikátová logika 1. řádu (PL1)
 ### a) Co je PL1?
 Jednoduché výroky, kde VL nestačí. "existuje ..", "všechna ..", "žádná .." apod. <br />
@@ -218,12 +227,52 @@ Jednoduché výroky, kde VL nestačí. "existuje ..", "všechna ..", "žádná .
 * Atomické formule se skládá z predikátového symbolu, který má v závorce termy (P(x), P(t)).
 * Formule - každá atomická formule je formule.
 
-### b) 🟣 Jazyk PL1?
+
+### b) 🟣 Jazyk PL1
 * Všeobecný kvantifikátor: "všichni", "žádní", "nikdo".
 * Existenční kv.: "někdo", "něco", "někteří", "existuje".
-* POZOR NA DVOJÍ ZÁPOR! Je lepší si větu přeložit do AJ, příklady: 1) "Žádná ryba není inteligentní." -> "No fish is inteligent". Negace bude u vlastnosti inteligence!!, 2) "Všichni vodníci nejsou mokří." -> "All mermen are not wet." Negace bude na začátku formule!! (lehce clunky angličtina nutná pro tuto pomůcku)
+* POZOR NA DVOJÍ ZÁPOR! Je lepší si větu přeložit do AJ, příklady: 1) "Žádná ryba není inteligentní." $\to$ "No fish is inteligent". Negace bude u vlastnosti inteligence!!, 2) "Všichni vodníci nejsou mokří." $\to$ "All mermen are not wet." Negace bude na začátku formule!! (lehce clunky angličtina nutná pro tuto pomůcku) <br /><br /><br />
 
-<br /><br /><br />
+
+### c) Sémantika PL1
+Pokud nevíme, co znamenají symboly v PL (P, Q, R,...), tak nemá smysl zjišťovat pravdivost formule. Avšak např. P(x) $\supset$ P(x) je vždy pravdivá (za všech okolností), je tautologie.
+
+* P(x, f(x)) - binární (2 argumenty). Označuje tedy binární relaci. R $\subseteq$ U x U
+* f(x) - unární. Označuje tedy nějakou funkci. f $\subseteq$ U x U, f: U $\to$ U
+[Sémantika ve VL](#b-sémantika-význam-formulí) <br /><br /><br />
+
+
+### d) Splnitelnost / model PL1
+Spojené se sémantikou. Model je interpretace (skládá se z univerza, relací a funkcí), ve které vše dává smysl.
+Např.: U - všichni lidi
+R(x) - x jsou členi univerza, třeba: jsou savci. PLATÍ!
+U - přirozená čísla bez nuly a jedničky
+R(x, y) - y je druhý prvek pro člen univerza, na y je aplikovaná funkce:
+f(y) - x^(2)
+PLATÍ! Pro každý člen univerza existuje nějaký prvek, který není stejný jako x a je to jeho druhá mocnina.
+(další příklady sémantiky a modelů jsou v 6. prezentaci, 20. slide a dál nebo ve CV.)
+[Splnitelnost v logice - základy](#c-splnitelnost-formulí-tautologie-kontradikce-model) <br />
+[Splnitelnost ve výrokové logice](#f-splnitelnost-vl-v-rezolučce) <br /><br /><br />
+
+
+### e) Rezolučka PL1
+Formule $\models$ F je pravdivá ve všech interpretacích. <br />
+Formule $P_1...P_n \models Q$ je pravdivá ve všech modelech množiny předpokladů. POUZE PRO UZAVŘENÉ FORMULE!! <br />
+* Pokud máme mezi jednotliv. P konjunkce, tak Q je pravdivá ve všech modelech. \neg Q pak není pravdivá v žádném modelu.
+* Znak vyplývání můžeme brát jako implikaci.
+* PRO UZAVŘENÉ FORMULE PLATÍ EKVIVALENCE!!
+* Pokud je negovaná formule kontradikcí (prázdna klauzule), tak původní formule je logicky pravdivá.
+* Formule je nesplnitelná, když je nepravdivá v každé interpretaci nad všemi možnými univerzy. <br /><br />
+
+Skolemova klauzulární forma je speciální konjunktivní normální forma pro PL rezolučku. - důkaz sporem (přímý důkaz můžeme použít jen když formule neobsahují existenční kvantifikátory). <br />
+**Skolemizace:** ZACHOVÁVÁ SPLNITELNOST!! Avšak skolemizovaná formule nemusí být ekvivalentní k původní formuli, ani z ní vyplývat. <br /><br />
+
+**Klauzule:** <br />
+Klauzule je konečná disjunkce literálů. <br />
+Vzhledem k asociativitě a komutativitě disjunkce nezáleží na pořadí literálů v klauzuli a klauzuli můžeme také pojímat jako disjunktivní množinu literálů. <br />
+Klauzulární formu můžeme také pojímat jako konjunktivní množinu klauzulí. <br /><br /><br />
+
+
 
 ## 5) Aristetolova logika
 * Fragmenty predikátové logiky.
