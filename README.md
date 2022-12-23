@@ -302,7 +302,8 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 
 
 
-## OTÁZKY!! (vysvětlení k individuálním odpovědím v závorce, špatné odpovědi mohou chybět, ale nejdůležitější jsou stejně odpovědi správné)
+## OTÁZKY!! (vysvětlení k individuálním odpovědím v závorce, špatné odpovědi mohou chybět, ale nejdůležitější jsou stejně odpovědi správné) <br />
+- formule nejsou přepsané do Latexu protože není moc čas
 [Link / skok úplně nahoru](#předmluva) <br />
 
 ### 1) Pro formuli $p \supset (q \lor \neg q)$
@@ -347,11 +348,11 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 💚 Je neplatný, protože formalizujeme-li jej, pak závěr není platný v libovolném modelu předpokladů
 
 ### 9) Které z tvrzení platí pro formuli ∀x[P(x) ⊃ Q(a,b)]
-💚 Je ekvivalentní s formulí [∀xP(x) ⊃ Q(a,b)]
-💥 Formule [∃xP(x) ⊃ Q(a,b)] z ní vyplývá.
-💥 Je ekvivalentní s formulí [¬∃xP(x) ⋁ Q(a,b)]
-💥 Je ekvivalentní s formulí [¬∃xP(x) ⊃ Q(a,b)]
-💥 Její negací je formule ∀x[P(x) ⋀ ¬Q(a,b)])
+💚 Je ekvivalentní s formulí [∀xP(x) ⊃ Q(a,b)] (kvantifikátor se přesouvá dovnitř jako u kroku 6 ve skolemizaci) <br />
+💥 Formule [∃xP(x) ⊃ Q(a,b)] z ní vyplývá. <br />
+💥 Je ekvivalentní s formulí [¬∃xP(x) ⋁ Q(a,b)] <br />
+💥 Je ekvivalentní s formulí [¬∃xP(x) ⊃ Q(a,b)] <br />
+💥 Její negací je formule ∀x[P(x) ⋀ ¬Q(a,b)] (není ani změněný kvantifikátor)
 
 ### 10) Pomocí rezoluční metody ve VL
 💚 Lze ověřit, zda negovaná formule je kontradikce. <br />
@@ -385,24 +386,24 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 14) Označte, které z následujících formulí jsou logicky pravdivé.
 💥 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] <br />
 💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
-💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)]
-💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)]
+💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] (přesouvání kvantifikátoru jako krok 6 skolemizace)
+💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)] (ekvivalentní úprava)
 
 ### 15) Označte, které z následujících formulí jsou logicky pravdivé.
 💥 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] <br />
-💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br />
+💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br /> (přesouvání kvantifikátoru jako krok 6 skolemizace)
 💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
-💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)]
+💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)] (negace, přesouvání kvantifikátoru jako krok 6 skolemizace)
 
 ### 16) Označte, které z následujících formulí jsou logicky pravdivé.
-💥 ∀xA(x) ≡ ∃xA(x) <br />
+💥 ∀xA(x) ≡ ∃xA(x) (není to samé) <br />
 💥 ∀x∀yA(x,y) ⊃ ∀x∀y¬A(x,y) <br />
 💚 A(x/y) ⊃ ∃xA(x) (term t je substituovatelný za proměnnou x) <br />
-💥 ∃x∀yA(x,y) ≡ ∃y∀xA(x,y)
+💥 ∃x∀yA(x,y) ≡ ∃y∀xA(x,y) (nemůžeme vyměnit proměnné v kvantifikátorech)
 
 ### 17) Určete, které z následujících úsudků jsou logicky platné:
 💥 Každý filozof je líný. Petr není filozof. Petr není líny. (Petr může být líný, není nijak dáno, že jenom filozofové jsou líní) <br />
-💚 Venku prší. Karel je veselý. Venku prší. <br />
+💚 Venku prší. Karel je veselý. Venku prší. (pokud je závěr v předpokladu, tak vyplývá) <br />
 💥 Každý pes je zelený. Alík není pes. Alík není zelený. (stejné vysvětlení jako u filozofů) <br />
 💥 Venku sněží. Svítí slunce. Venku nesněží. (spor) <br />
 
@@ -410,7 +411,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Sněhová královna vládne v říši sněhu a ledu. (neexistuje sněhová královna, nemá smysl se nad tímto vůbec zamýšlet) <br />
 💥 Mrzne až praští. (subjektivní) <br />
 💚 Dnes sněží a mrzne. <br />
-💥 Z čerstvě napadaného sněhu se velmi dobře budují velké hromady.
+💥 Z čerstvě napadaného sněhu se velmi dobře budují velké hromady. (nemá ani spojku)
 
 ### 19) Složené výroky ve VL jsou:
 💥 Sněhová královna vládne v říši sněhu a ledu. (neexistuje sněhová královna, nemá smysl se nad tímto vůbec zamýšlet) <br />
@@ -443,14 +444,14 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak.
 
 ### 24) Určete, které z následujících tvrzení jsou pravdivé:
-💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. <br />
-💥 Predikátová logika druhého řádu je méně expresivní než PL1. <br />
+💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. (neplatí, potvrzeno Menšíkem) <br />
+💥 Predikátová logika druhého řádu je méně expresivní než PL1. (druhý řád je víc expresivní - logicky) <br />
 💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. <br />
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
 
 ### 25) Určete, které z následujících tvrzení jsou pravdivé:
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru. <br />
-💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. <br />
+💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. (neplatí, potvrzeno Menšíkem) <br />
 💥 Predikátová logika druhého řádu je méně expresivní než PL1. <br />
 💥 Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
 
@@ -461,16 +462,16 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
 
 ### 27) Nechť F je formule VL obsahující literály a, b, c, pak F:
-💥 Je tautologií, pokud existuje alespoň jeden model. <br />
+💥 Je tautologií, pokud existuje alespoň jeden model. (musí být všechny model) <br />
 💥 Je sporná, pokud aspoň jedno ohodnocení není modelem. <br />
-💥 Je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení. <br />
-💚 Má celkem 8 ohodnocení.
+💥 Je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení. (neřešíme literály, ale modely a nesmí být žádný model) <br />
+💚 Má celkem 8 ohodnocení. (2 na počet literálů)
 
 ### 28) Pomocí Vennových diagramů provádíme v PL1:
 💚 Ověřování platnosti libovolných úsudků v PL1. <br />
 💥 Kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL. <br />
 💥 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární. <br />
-💚 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární.
+💚 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární. (P(x) řešíme s těmito predikáty)
 
 ### 29) Nechť A, B ⊨ C a A, C ⊨ D, pak:
 💚 Formule A je pravdivá ve všech modelech množiny formulí {B, C}. <br />
@@ -491,10 +492,10 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 A, B, C, D jsou nutně pravdivé
 
 ### 32) Která z následujících tvrzení jsou správné?
-💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. <br />
+💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
 💥 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa. <br />
 💥 Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. <br />
-💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q)
 
 ### 33) Určete, co platí pro klausuli:
 💥 Je to elementární konjunkce. <br />
@@ -594,12 +595,12 @@ Judy je krásná. (platí pro PL a ne VL)
 
 ### 49) Která tvrzení platí:
 💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. X <br />
-💚 Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané formuli. <br />
+💚 Formule VL má 2 na "n" možných valuací, kde "n" je počet výrokových proměnných v dané formuli. <br />
 💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
 💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. 
 
 ### 50) Která tvrzení platí:
-💚 Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané formuli. <br />
+💚 Formule VL má 2 na "n" možných valuací, kde "n" je počet výrokových proměnných v dané formuli. <br />
 💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
 💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X <br />
 💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy.
@@ -641,7 +642,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Relace použité pro interpretaci v PL1 musí být homogenní.
 
 ### 57) Určete, které z následujících tvrzení jsou pravdivé:
-💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná odpověď <br />
+💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. <br />
 💥 Relace, která není celým kartézským součinem je funkce. <br />
 💥 Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má minimálně jeden obraz. <br />
 💥 Funkce je libovolná podmnožina kartézského součinu.
@@ -676,13 +677,13 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Neobsahuje konjunkci. <br />
 💥 Ibsahuje pouze výrokové proměnné.
 
-### 63) Co následujícího platí?
+### 63) Co následujícího platí? (je fajn si tu udělat pravdivostní tabulku)
 💥 Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
-💚 Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r).<br />
+💚 Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely. 
 
-### 64) Co následujícího platí?
+### 64) Co následujícího platí? (je fajn si tu udělat pravdivostní tabulku)
 💥 Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💚 Jedním z modelů formule (p ⊃ q) ∧ (q ∨ r) je valuace p=0, q=0, r=1. <br />
