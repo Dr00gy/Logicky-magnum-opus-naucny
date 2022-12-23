@@ -28,6 +28,7 @@ $P_1...P_n\models Z$ <br /><br /><br />
 ### b) Logické vyplyvání, tedy, pravda / nepravda
 Závěr bude logicky vyplývat, pokud v úsudku nikdy nebudou pravdivé všechny předpoklady a zároveň nepravdivý závěr = správná logická forma. Pro správnou logickou formu taktéž potřebujeme, aby všechny nutné předpoklady byly uvedené:
 
+🔵
 Předpoklad: Číslo 7 je prvočíslo <br />
 ◻️◻️◻️ <br />
 Závěr: Číslo 7 je dělitelné 1 a samo sebou <br /><br />
@@ -37,7 +38,7 @@ Závěr: Číslo 7 je dělitelné 1 a samo sebou <br /><br />
 $P_1...P_n\models Z$ <br />
 (pokud toto má pravdivé premisy a nepravidvý závěr, tak jde o spor) <br /><br />
 
-**Reflexivita:** Pokud je jeden z předpokladů závěrem, tak závěr logicky vyplývá. <br /><br />
+🔵 **Reflexivita:** Pokud je jeden z předpokladů závěrem, tak závěr logicky vyplývá. <br /><br />
 
 Ve výrokové logice (VL), formule (složený výrok, např. "A") výrokově logicky vyplývá z množiny formulí "M" (značíme: $M\models A$), jestliže A je pravdivá v každém modelu množiny M (jednička na konci řádku v pravdivostní tabulce, tedy pravda). <br />
 Při všech ohodnoceních, kdy jsou pravdivé předpoklady, je pravdivý i závěr. Tedy, závěr je pravdivý ve všech modelech předpokladů. <br />
@@ -49,11 +50,11 @@ Všechny úsudky se stejnou logickou formou jako nějaký platný úsudek jsou p
 
 
 ### c) Platnost / správnost
-Úsudek může být platný a zároveň jeho závěr nepravdivý - avšak jedna premisa úsudku bude nutně nepravdivá. Úsudek je logicky platný pokud ve všech interpretacích, kde máme pravdivé premisy, máme pravdivý i závěr. <br />
+🔵 Úsudek může být platný a zároveň jeho závěr nepravdivý - avšak jedna premisa úsudku bude nutně nepravdivá. Úsudek je logicky platný pokud ve všech interpretacích, kde máme pravdivé premisy, máme pravdivý i závěr. <br />
 
-Správnost úsudku je dána logickou strukturou. <br /><br />
+🔵 Správnost úsudku je dána logickou strukturou. <br /><br />
 
-**Monotónnost:** Je-li úsudek platný, pak rozšíření množiny předpokladů o další předpoklad nevede ke změně platnosti úsudku. <br />
+🔵 **Monotónnost:** Je-li úsudek platný, pak rozšíření množiny předpokladů o další předpoklad nevede ke změně platnosti úsudku. <br />
 &nbsp;&nbsp; A <br />
 &nbsp;&nbsp; B <br />
 &nbsp;&nbsp; C <br />
@@ -123,7 +124,7 @@ Význam jednoduchých výroků redukuje VL na pravdu (1) a nepravdu (0). Výroko
 
 
 ### d) Normální formy
-Každé formuli přísluší právě jedna pravdivostní funkce (pravdivostní tabulka). Každé jedné takové funkci pak přísluší nekonečně mnoho formulí, které jsou navzájem ekvivalentní (A <=> B, A <=> C, B <=> D, C <=> D, atd.). DŮLEŽITÉ!! Nesmíme plést tyto ekvivalence: <=> (značí úpravu) s $\equiv$ (značí stejné modely / splnitelnost - u otázek na to opět upozorním)!! Platí však A <=> B, právě když formule $A \equiv B$ je tautologie. <br />
+Každé formuli přísluší právě jedna pravdivostní funkce (pravdivostní tabulka). Každé jedné takové funkci pak přísluší nekonečně mnoho formulí, které jsou navzájem ekvivalentní (A <=> B, A <=> C, B <=> D, C <=> D, atd.). 🔵 DŮLEŽITÉ!! Nesmíme plést tyto ekvivalence: <=> (značí úpravu) s $\equiv$ (značí stejné modely / splnitelnost - u otázek na to opět upozorním)!! Platí však A <=> B, právě když formule $A \equiv B$ je tautologie. <br />
 **Element:** = literál. Literál je výrokový symbol nebo jeho negace (p, $\neg p$). <br />
 **Elementární konjunkce (EK) / disjunkce (ED):** konjunkce / disjunkce literálů (celkem useless). <br />
 **Úplná elementární konjunkce (UEK) / disjunkce (UED):** EK nebo ED, kde se každý symbol z množiny vyskytuje jen jednou. Useful jen pro hledání UDNF / UKNF. <br />
@@ -146,7 +147,7 @@ Konjunktivní normální forma (KNF) se v rezoluční metodě nazývá klauzulá
 
 ### f) Splnitelnost VL v rezolučce
 * Důkaz, že A je kontradikce (nesplnitelná): existuje n takové, že Rn(A) obsahuje prázdnou klauzuli. Tedy, existuje rezoluční proces, který nás dostane k prázdné klauzuli.
-* Nepřímý důkaz (naše "normální" rezoluční metoda), že A je tautologie: neg(A) je kontradikce.
+* Nepřímý důkaz (naše "normální" rezoluční metoda), že A je tautologie: $\neg A$ je kontradikce.
 * Důkaz, že množina formulí je nesplnitelná: musíme u všech dokázat, že to jsou kontradikce. <br />
 
 Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Používané pro AI. Máme formuli, na kterou používáme rezoluční metodu. Každé jeji upravené části odvozují další skutečnosti (cv. 4, příklad 2. v RES).
@@ -156,8 +157,8 @@ Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Použ�
 
 ### g) Správnost VL v rezolučce
 * Důkaz správnosti úsudku $A_1...A_n\models Z$ (rezolučkama)
-*	Přímý - postupným vytvářením rezolvent odvodíme, že vyplývá.
-* Nepřímý - dokážeme že $A_1...A_n \supset Z$ je tautologie, neboli $A_1 \cap ... \cap A_n \supset \neg Z$ je kontradikce - nesplnitelná. <br />
+*	🔵 Přímý - postupným vytvářením rezolvent odvodíme, že vyplývá.
+* 🔵 Nepřímý - dokážeme že $A_1...A_n \supset Z$ je tautologie, neboli $A_1 \cap ... \cap A_n \supset \neg Z$ je kontradikce - nesplnitelná. <br />
 (příklady ve 4. prezentaci od pana M) <br />
 
 * V rezolučce můžeme v každém kroku vypustit jen jednu dvojici literálů.
@@ -172,7 +173,7 @@ Odvodit, co vyplývá z {A1,...,An} znamená odvodit všechny rezolventy. Použ�
 
 
 
-## 3) Množiny
+## 3) 🔵 Množiny
 ### a) Co je množina?
 Množina je soubor prvků a je svými prvky plně určena; množinu s prvky a, b, c značíme: {a, b, c}. <br />
 Prvkem množiny může být opět množina. Množina také nemusí mít žádné prvky: $\varnothing$. <br />
@@ -200,7 +201,7 @@ Množiny jsou identické, právě tehdy a jen tehdy, když mají stejné prvky (
 * Zobecnění: A x ... x A - množina n-tic. Také můžeme značit $A^{n}$.
 * Potenční množina: P(A) = {B | B $\subseteq$ A}, značíme také $2^{A}$. Krátce, do potenční množiny libovolné množiny patří: Ø, všechny prvky množiny individuálně a všemožné kombinace prvků mezi sebou v množině. <br />
 
-**Kardinalita / mohutnost:** Mohutnost množiny (také kardinalita množiny) je pojmem teorie množin vyjadřující velikost, počet prvků u konečných, ale i nekonečných množin. Značíme |M|. <br />
+🔵 **Kardinalita / mohutnost:** Mohutnost množiny (také kardinalita množiny) je pojmem teorie množin vyjadřující velikost, počet prvků u konečných, ale i nekonečných množin. Značíme |M|. <br />
 |A| = |B| právě když existuje bijekce f (níže): A $\to$ B <br />
 |A| menší nebo rovno |B| právě když existuje injekce f (níže): A $\to$ B <br /><br /><br />
 
@@ -272,7 +273,7 @@ Formule $P_1...P_n \models Q$ je pravdivá ve všech modelech množiny předpokl
 * Pokud je negovaná formule kontradikcí (prázdna klauzule), tak původní formule je logicky pravdivá.
 * Formule je nesplnitelná, když je nepravdivá v každé interpretaci nad všemi možnými univerzy. <br /><br />
 
-Skolemova klauzulární forma je speciální konjunktivní normální forma pro PL rezolučku. - důkaz sporem (přímý důkaz můžeme použít jen když formule neobsahují existenční kvantifikátory). <br />
+Skolemova klauzulární forma je speciální konjunktivní normální forma pro PL rezolučku. - 🔵 důkaz sporem (přímý důkaz můžeme použít jen když formule neobsahují existenční kvantifikátory). <br />
 **Skolemizace:** ZACHOVÁVÁ SPLNITELNOST!! Avšak skolemizovaná formule nemusí být ekvivalentní k původní formuli, ani z ní vyplývat. <br /><br />
 
 **Klauzule:** <br />
@@ -283,7 +284,7 @@ Klauzulární formu můžeme také pojímat jako konjunktivní množinu klauzul�
 
 
 ## 5) Aristetolova logika
-* Fragmenty predikátové logiky.
+* 🔵 Fragmenty predikátové logiky.
 * SUBJEKT, a úsudky z nich vytvořené.
 
 *	Všechna S jsou P, SaP
@@ -296,7 +297,7 @@ Aristetolova logika - logický čtverec might be helpful. <br />
 Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br />
 
 
-## SLOVA PANOVA (potvrzeno panem M)
+🔵 ## SLOVA PANOVA (potvrzeno panem M)
 *Jestliže jsou premisy i závěr pravdivý, pak je usudek platný.* NEPLATÍ!! 💥 <br /><br /><br />
 
 
@@ -368,74 +369,374 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Funkce dělení na celých číslech je parciální <br />
 💥 Funkce sčítání reálných čísel je pouze parciální
 
-12)	Které z následujících systémů spojek ve VL jsou úplné:
-💥 disjunkce, implikace
-💚 negace, implikace Správná odpověď
-💥 konjunkce, implikace
+### 12)	Které z následujících systémů spojek ve VL jsou úplné:
+💥 disjunkce, implikace <br />
+💚 negace, implikace <br />
+💥 konjunkce, implikace <br />
 💥 konjunkce, disjunkce, implikace, ekvivalence
 
-13) Které z následujících systémů spojek ve VL jsou úplné:
-💥 konjunkce, disjunkce, implikace, ekvivalence
-💥 konjunkce, implikace
-💥 konjunkce, disjunkce
-💚 negace, disjunkce Správná odpověď
+### 13) Které z následujících systémů spojek ve VL jsou úplné:
+💥 konjunkce, disjunkce, implikace, ekvivalence <br />
+💥 konjunkce, implikace <br />
+💥 konjunkce, disjunkce <br />
+💚 negace, disjunkce <br />
 (víme, že {¬, ∧, ∨, ⇒} tvoří úplný systém logických spojek.. nyní si stačí uvědomit, že platí: (a ⇒ b) |=| (¬a ∨ b) a (a ∧ b) |=| ¬(¬a ∨ ¬b).. 3. množina ∆ = {¬, ∧} tvoří úplný systém logických spojek - jediné správné kombinace jsou: {¬,→}, {¬,∧}, {¬,∨}, SOURCE: MUNI)
 
-14) Označte, které z následujících formulí jsou logicky pravdivé.
-💚 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)]
-💚 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))]
-💥 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] d) ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)]
+### 14) Označte, které z následujících formulí jsou logicky pravdivé.
+💥 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] <br />
+💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
+💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)]
+💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)]
 
-15) Označte, které z následujících formulí jsou logicky pravdivé.
-💚 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)]
-💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)]
-💚 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))]
+### 15) Označte, které z následujících formulí jsou logicky pravdivé.
+💥 ¬∀x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] <br />
+💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br />
+💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
 💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)]
 
-16) Označte, které z následujících formulí jsou logicky pravdivé.
-💥 ∀xA(x) ≡ ∃xA(x)
-💥 ∀x∀yA(x,y) ⊃ ∀x∀y¬A(x,y)
-💥 A(x/y) ⊃ ∃xA(x) (term t je substituovatelný za proměnnou x)
+### 16) Označte, které z následujících formulí jsou logicky pravdivé.
+💥 ∀xA(x) ≡ ∃xA(x) <br />
+💥 ∀x∀yA(x,y) ⊃ ∀x∀y¬A(x,y) <br />
+💚 A(x/y) ⊃ ∃xA(x) (term t je substituovatelný za proměnnou x) <br />
 💥 ∃x∀yA(x,y) ≡ ∃y∀xA(x,y)
 
-17) Určete, které z následujících úsudků jsou logicky platné:
-a) Každý filozof je líný Petr není filozof. Petr není líny.
-b) Venku prší. Karel je veselý. Venku prší.
-c) Každý pes je zelený. Alík není pes. Alík není zelený.
-d) Venku sněží. Svítí slunce. Venku nesněží.
+### 17) Určete, které z následujících úsudků jsou logicky platné:
+💥 Každý filozof je líný. Petr není filozof. Petr není líny. (Petr může být líný, není nijak dáno, že jenom filozofové jsou líní) <br />
+💚 Venku prší. Karel je veselý. Venku prší. <br />
+💥 Každý pes je zelený. Alík není pes. Alík není zelený. (stejné vysvětlení jako u filozofů) <br />
+💥 Venku sněží. Svítí slunce. Venku nesněží. (spor) <br />
 
-Složené výroky ve VL jsou:
-a) Sněhová královna vládne v říši sněhu a ledu.
-b) Mrzne až praští.
-c) Dnes sněží a mrzne.
-d) Z čerstvě napadaného sněhu se velmi dobře budují velké hromady.
+### 18) Složené výroky ve VL jsou:
+💥 Sněhová královna vládne v říši sněhu a ledu. (neexistuje sněhová královna, nemá smysl se nad tímto vůbec zamýšlet) <br />
+💥 Mrzne až praští. (subjektivní) <br />
+💚 Dnes sněží a mrzne. <br />
+💥 Z čerstvě napadaného sněhu se velmi dobře budují velké hromady.
 
-Složené výroky ve VL jsou:
-a) Sněhová královna vládne v říši sněhu a ledu.
-b) Z čerstvě napadaného sněhu se velmi dobře budují velké hromady.
-c) Lední hokej je velmi zajímavý sport pro všechny věkové kategorie.
-d) Jestliže bude sněžit, tak si postavíme sněhuláka.
+### 19) Složené výroky ve VL jsou:
+💥 Sněhová královna vládne v říši sněhu a ledu. (neexistuje sněhová královna, nemá smysl se nad tímto vůbec zamýšlet) <br />
+💥 Z čerstvě napadaného sněhu se velmi dobře budují velké hromady. <br />
+💥 Lední hokej je velmi zajímavý sport pro všechny věkové kategorie. (subjektivní) <br />
+💚 Jestliže bude sněžit, tak si postavíme sněhuláka.
 
-Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule ∀x[P(x) ⊃ Q(x)] ⊃ [∀xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU = U, je také QU = U. b) Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. c) Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. d) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. b) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. c) Formule ∃x[P(x) ∨ Q(x)] ≡ [∃xP(x) ∨ ∃xQ(x)] je logicky pravdivá, protože je-li (PU ∪ QU) neprázdné, pak musí být PU nebo QU neprázdné množiny a naopak. d) Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. b) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. c) Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. d) Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je log
+### 20) 🔴 Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak:
+💚 Formule ∀x[P(x) ⊃ Q(x)] ⊃ [∀xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU = U, je také QU = U. <br />
+💚 Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. <br />
+💥 Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. <br />
+💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak.
 
-Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak: a) Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. b) Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. c) Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné. d) Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak.
+### 21) 🔴 Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak:
+💥 Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. <br />
+💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. <br />
+💥 Formule ∃x[P(x) ∨ Q(x)] ≡ [∃xP(x) ∨ ∃xQ(x)] je logicky pravdivá, protože je-li (PU ∪ QU) neprázdné, pak musí být PU nebo QU neprázdné množiny a naopak. <br />
+💚 Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U.
 
-Určete, které z následujících tvrzení jsou pravdivé: a) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. b) Predikátová logika druhého řádu je méně expresivní než PL1. X c) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+### 22) 🔴 Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak:
+💚 Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. <br />
+💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. <br />
+💚 Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. <br />
+💚 Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné.
 
-Určete, které z následujících tvrzení jsou pravdivé: a) Správnost úsudku je dána pouze logickou strukturou premis a závěru. b) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. c) Predikátová logika druhého řádu je méně expresivní než PL1. X d) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+### 23) 🔴 Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak:
+💚 Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. <br />
+💚 Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. <br />
+💚 Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné. <br />
+💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak.
 
-Určete, které z následujících tvrzení jsou pravdivé: a) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. b) Predikátová logika druhého řádu je méně expresivní než PL1. X c) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr. d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+### 24) Určete, které z následujících tvrzení jsou pravdivé:
+💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
+💥 Predikátová logika druhého řádu je méně expresivní než PL1.
+💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným.
+💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
 
-Nechť F je formule VL obsahující literály a, b, c, pak F: a) je tautologií, pokud existuje alespoň jeden model b) je sporná, pokud aspoň jedno ohodnocení není modelem c) je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení d) má celkem 8 ohodnocení
+### 25) Určete, které z následujících tvrzení jsou pravdivé:
+💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
+💥 Predikátová logika druhého řádu je méně expresivní než PL1.
+💥 Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
 
-Pomocí Vennových diagramů provádíme v PL1: a) ověřování platnosti libovolných úsudků v PL1 b) kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL c) ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární d) ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární
+### 26) Určete, které z následujících tvrzení jsou pravdivé:
+💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným.
+💥 Predikátová logika druhého řádu je méně expresivní než PL1.
+💥 Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru.
 
-Nechť A, B ⊨ C a A, C ⊨ D, pak: a) Formule A je pravdivá ve všech modelech množiny formulí {B, C}. b) Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé. c) Když není pravdivá formule D, tak není pravdivá ani A ani B. d) Formule D je pravdivá v každém modelu množiny formulí {A, C}.
+### 27) Nechť F je formule VL obsahující literály a, b, c, pak F:
+💥 je tautologií, pokud existuje alespoň jeden model
+💥 je sporná, pokud aspoň jedno ohodnocení není modelem
+💥 je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení
+💚 má celkem 8 ohodnocení
 
-Nechť platí: A, B, C ⊨ D, pak: a) D je formule pravdivá v každém modelu množiny formulí {A, B, C}. b) Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. c) A, B ⊨ D d) Množina formulí {A, B, C, ¬D} má model.
+### 28) Pomocí Vennových diagramů provádíme v PL1:
+💚 ověřování platnosti libovolných úsudků v PL1
+💥 kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL
+💥 ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární
+💚 ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární
 
-Nechť platí: A, B, C ⊨ D, pak: a) A, B, C, E ⊨ D b) Množina formulí {A, B, C, ¬D} má model. c) Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom. d) A, B, C, D jsou nutně pravdivé
+### 29) Nechť A, B ⊨ C a A, C ⊨ D, pak:
+💚 Formule A je pravdivá ve všech modelech množiny formulí {B, C}.
+💥 Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé.
+💥 Když není pravdivá formule D, tak není pravdivá ani A ani B.
+💚 Formule D je pravdivá v každém modelu množiny formulí {A, C}.
 
-Která z následujících tvrzení jsou správné? a) Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. b) Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa. c) Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. d) Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+### 30) Nechť platí: A, B, C ⊨ D, pak:
+💚 D je formule pravdivá v každém modelu množiny formulí {A, B, C}.
+💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom.
+💚 A, B ⊨ D
+💥 Množina formulí {A, B, C, ¬D} má model.
 
-Určete, co platí pro klausuli: a) je to elementární konjunkce X b) obsahuje pouze konjunkci literálů X c) je to konečná konjunkce výrokových symbolů d) je to konečná disjunkce literálů
+### 31) Nechť platí: A, B, C ⊨ D, pak:
+💚 A, B, C, E ⊨ D
+💥 Množina formulí {A, B, C, ¬D} má model.
+💥 Formule D nemusí být pravdivá v každém modelu množiny formulí {A, B, C}, avšak musí být pravdivá v aspoň jednom.
+💥 A, B, C, D jsou nutně pravdivé
+
+### 32) Která z následujících tvrzení jsou správné?
+💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+💥 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa.
+💥 Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
+
+### 33) Určete, co platí pro klausuli:
+💥 je to elementární konjunkce
+💥 obsahuje pouze konjunkci literálů
+💥 je to konečná konjunkce výrokových symbolů
+💚 je to konečná disjunkce literálů
+
+### 34) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
+💥 Z definice podmnožiny plyne, že ne každá množina je svou podmnožinou.
+💥 Množina A se rovná množině B, právě když každý prvek A je také prvkem B a ne naopak.
+💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. Správná odpověď
+💥 Prázdná množina není podmnožinou žádné množiny.
+
+### 35) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
+💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. Správná odpověď
+💥 Množina A je podmnožinou množiny B, značíme A ⊆ B, právě tehdy a jen tehdy, když mají identické prvky.
+💥 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě když každý prvek A je také prvkem B.
+💥 Množina A se rovná množině B, právě když každý prvek A je také prvkem B a ne naopak.
+
+### 36) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
+💥 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě když každý prvek A je také prvkem B.
+💥 Množina A je podmnožinou množiny B, značíme A ⊆ B, právě tehdy a jen tehdy, když mají identické prvky.
+💚 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě tehdy, když každý prvek z A je také prvkem B a ne naopak.
+💥 Z definice plyne, že ne každá množina je svou podmnožinou.
+
+Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
+💚 Pro důkaz pomocí rezoluční metody je nutné převést formuli do KNF. Správná odpověď
+💚 V případě nepřímého důkazu tautologičnosti formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) pomocí rezoluční metody nedojde k odvození prázdné klausule.
+
+Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
+💚 Platnost úsudku nezávisí na interpretaci. Správná odpověď
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
+
+Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
+💚 V případě nepřímého důkazu tautologičnosti pomocí rezoluční metody formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) dojde k odvození prázdné klausule. Správná odpověď
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
+
+Která z následujících tvrzení platí pro rezoluční metodu ve VL?
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF.
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF.
+💚 Rezoluční metoda umožňuje prokázat platnost úsudku jak sporem, tak přímou metodou.
+
+Určete, které z následujících tvrzení je pravdivé:
+💥 Množiny jsou identické, právě když mají stejný počet prvků. X
+💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A.
+💚 Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách.
+💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+
+Určete, které z následujících tvrzení je pravdivé:
+a) Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její
+prvky patří i množina M. Správná odpověď
+b) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+c) Množiny jsou identické, právě když mají stejný počet prvků.
+d) Průnik dvou libovolných množin je vždycky neprázdný.
+
+Určete, které z následujících tvrzení je pravdivé:
+a) Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně
+podmnožinou množiny A.
+b) Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její
+prvky patří i množina M. Správná odpověď
+c) Množiny jsou identické, právě když mají stejný počet prvků.
+d) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+
+Určete, které z následujících tvrzení je pravdivé:
+a) Množiny jsou identické, právě když mají stejný počet prvků.
+b) Pokud je množina A vlastní podmnožina množiny B, pak B má aspoň jeden prvek, který
+neleží v A. Správná odpověď
+c) Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně
+podmnožinou množiny A.
+d) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+
+Určete, které z následujících tvrzení je pravdivé:
+a) Průnik dvou libovolných množin je vždycky neprázdný.
+b) Množiny jsou identické, právě když mají stejný počet prvků.
+c) Pokud mají dvě množiny stejnou mohutnost, pak jsou identické.
+d) Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách. Správná odpověď
+
+Která tvrzení platí:
+a) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. 
+b) Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou
+metodu nikoli rezoluční. Správná odpověď
+c) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
+normální konjunktivní formy. X
+d) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+
+Která tvrzení platí:
+a) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+b) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
+c) Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou
+metodu nikoli rezoluční. Správná odpověď
+d) Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu. X
+
+Která tvrzení platí:
+a) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
+normální konjunktivní formy. X
+b) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+c) Pokud výrokově logický úsudek zapíšeme ve tvaru formule (P1 ∧ P2 ∧ … ∧ Pn) ⊃ Z, kde
+P1 až Pn jsou premisy a Z je závěr, pak je úsudek platný tehdy a jen tehdy, když je tato
+formule pravdivá v každé valuaci. Správná odpověď
+d) Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu. X
+
+Která tvrzení platí:
+a) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
+normální konjunktivní formy. X
+b) Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané
+formuli. Správná odpověď
+c) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+d) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
+
+Která tvrzení platí:
+a) Formule VL má 2n možných valuací, kde n je počet výrokových proměnných v dané
+formuli. Správná odpověď
+b) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+c) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
+d) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
+normální konjunktivní formy.
+
+Která tvrzení platí:
+a) Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. X
+b) Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné
+normální konjunktivní formy. X
+c) Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost.
+d) Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou
+metodu nikoli rezoluční. Správná odpověď
+
+Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+a) Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná.
+b) Je vždy prázdná.
+c) Je prázdná vždy, když (B ∪ C) je prázdná. Správná odpověď
+d) Je neprázdná, pokud každá z množin A, B, C je neprázdná.
+
+Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+a) Je neprázdná, pokud každá z množin A, B, C je neprázdná.
+b) Je vždy prázdná.
+c) Obsahuje minimálně |B|+|C| prvků.
+d) Je prázdná, pokud A neobsahuje alespoň jeden prvek z B nebo z C. Správná odpověď
+
+Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+a) Je prázdná, pokud alespoň jedna z množin A, B, C je prázdná.
+b) Je vždy prázdná.
+c) Obsahuje minimálně |B|+|C| prvků.
+d) Obsahuje maximálně |A| prvků. Správná odpověď
+
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Funkce je libovolná podmnožina kartézského součinu.
+b) Relace je pouze zprava jednoznačné zobrazení.
+c) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
+minimálně jeden obraz.
+d) Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná
+Parciální = nemá žádný obraz
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Funkce je libovolná podmnožina kartézského součinu.
+b) Relace, která není celým kartézským součinem je funkce.
+c) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
+minimálně jeden obraz.
+d) Relace použité pro interpretaci v PL1 musí být homogenní. Správná odpověď
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná
+odpověď
+b) Relace, která není celým kartézským součinem je funkce.
+c) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
+minimálně jeden obraz.
+d) Funkce je libovolná podmnožina kartézského součinu.
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Funkce je libovolná podmnožina kartézského součinu.
+b) Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. Správná
+odpověď
+c) Relace je pouze zprava jednoznačné zobrazení.
+d) Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má
+minimálně jeden obraz.
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Relace je pouze zprava jednoznačné zobrazení.
+b) Funkce je libovolná podmnožina kartézského součinu.
+c) Relace, která není celým kartézským součinem je funkce.
+d) PL1 pracuje pouze s totálními funkcemi, tj. takovými, kdy každý vzor má právě jeden
+obraz. Správná odpověď
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
+b) Predikátová logika druhého řádu je méně expresivní než PL1. X
+c) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni
+adekvátně formalizovat i ve VL tak, že zůstane platným.
+d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+b) Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný.
+c) Predikátová logika druhého řádu je méně expresivní než PL1. X
+d) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+
+Určete, které z následujících tvrzení jsou pravdivé:
+a) Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni
+adekvátně formalizovat i ve VL tak, že zůstane platným.
+b) Predikátová logika druhého řádu je méně expresivní než PL1. X
+c) Ze sporné množiny předpokladů nemůže vyplývat pravdivý závěr.
+d) Správnost úsudku je dána pouze logickou strukturou premis a závěru.
+
+Nechť F je formule VL obsahující literály a, b, c, pak F:
+a) je tautologií, pokud existuje alespoň jeden model
+b) je sporná, pokud aspoň jedno ohodnocení není modelem
+c) je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení
+d) má celkem 8 ohodnocení
+
+Pomocí Vennových diagramů provádíme v PL1:
+a) ověřování platnosti libovolných úsudků v PL1
+b) ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární
+c) ověřování platnosti úsudků, které jsou složeny ze tří subjekt-predikátových (S-P) výroků
+(kde S i P jsou nějaké vlastnosti) Správná odpověď
+d) ověřování platnosti úsudků v logikách vyšších řádů než PL1
+
+Určete, co platí pro klausuli:
+a) je to elementární konjunkce X
+b) obsahuje pouze konjunkci literálů X
+c) je to konečná konjunkce výrokových symbolů
+d) je to konečná disjunkce literálů
+
+Určete, co platí pro klausuli:
+a) je to elementární konjunkce
+b) obsahuje pouze konjunkci literálů
+c) neobsahuje konjunkci Správná odpověď
+d) obsahuje pouze výrokové proměnné
+
+Co následujícího platí?
+a) Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
+b) Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r). Správná odpověď
+c) Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r).
+d) Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely.
+
+Co následujícího platí?
+a) Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r).
+b) Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
+c) Jedním z modelů formule (p ⊃ q) ∧ (q ∨ r) je valuace p=0, q=0, r=1. Správná odpověď
+d) Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r).
