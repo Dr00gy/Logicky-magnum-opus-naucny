@@ -331,6 +331,7 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se jedná o surjektivní zobrazení <br />
 💚 Pokud relace R je definována jako podmnožina B x A $\cup$ A x B a jedná se o symetrickou relaci. Pokud je v relaci R dvojice [1,b], pak se v relaci R nachází rovněž dvojice [b,1] <br />
 💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se nejedná o injektivní zobrazení
+💚 Pokud relace R je def jako podmnožina BxA sjednoceno s AxB a jedná se o symetrickou relaci, potom je v relaci R dvojice [1,b], pak se v relaci R nachází rovněž dvojice [b,1].
 
 ### 5) Které z tvrzení platí pro formuli $\forall x \forall y$ [P(x,y) $\supset$ Q(f(x),y)]
 💚 V jejím modelu je binární relace P podmnožinou relace Q (binární relace má dva argumenty - zde "y", které je u obou stejné a "x", které se v Q aplikuje do funkce) <br />
@@ -373,6 +374,7 @@ f' ... druhá mocnina.
 💚 Lze ověřit, zda negovaná formule je kontradikce. <br />
 💚 Lze nepřímo dokázat tautologičnost formule. <br />
 💚 Lze ověřit tautologičnost formule a platnost úsudku VL. <br />
+💚 Lze nepřímo dokázat platnost úsudku. <br />
 💥 Lze ověřit, že tento úsudek je platný: <br />
 Všechny opice jsou krásné, <br />
 Judy je opice <br />
@@ -429,12 +431,11 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Lední hokej je velmi zajímavý sport pro všechny věkové kategorie. (subjektivní a není tam ani spojka) <br />
 
 ### 16) 🔴 Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak:
-💚 Formule ∀x[P(x) ⊃ Q(x)] ⊃ [∀xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU = U, je také QU = U. <br />
+💚 Je-li formule ∀xPx⊃Qx v dané interpretaci pravdivá, pak platí, že PU ⊆ QU <br />
+💚 Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. <br /> <br />
 💚 Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. <br />
-💚 Formule ∃x[P(x) ∧ Q(x)] ≡ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné množiny a naopak. <br />
 💚 Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. <br />
 💚 Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné. <br />
-💥 Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. <br />
 💥 Formule ∃x[P(x) ∨ Q(x)] ≡ [∃xP(x) ∨ ∃xQ(x)] je logicky pravdivá, protože je-li (PU ∪ QU) neprázdné, pak musí být PU nebo QU neprázdné množiny a naopak.
 
 ### 17) Určete, které z následujících tvrzení jsou pravdivé:
@@ -442,6 +443,10 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. <br />
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru. <br />
 💚 PL1 pracuje pouze s totálními funkcemi, tj. takovými, kdy každý vzor má právě jeden obraz. <br />
+💚 Metodou přirozené dedukce v PL 1 lze dokazovat jak přímo, tak i nepřímo. <br />
+💚 Pokud je množina A vlastní podmnožinou B, pak B má alespoň jeden prvek, který neleží v A. <br />
+💚 Při použití obecné rezoluční metody obecně vedeme důkaz nepřímo. <br />
+💚 Sound argument je takový, jehož premisy jsou pravdivé, tedy i závěr je pravdivý. <br />
 💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. (neplatí, potvrzeno Menšíkem) <br />
 💥 Predikátová logika druhého řádu je méně expresivní než PL1. (druhý řád je víc expresivní - logicky) <br />
 💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. <br />
@@ -459,6 +464,7 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 19) Pomocí Vennových diagramů provádíme v PL1:
 💚 Ověřování platnosti úsudků, které jsou složeny ze tří subjekt-predikátových (S-P) výroků (kde S i P jsou nějaké vlastnosti). <br />
 💚 Ověřování platnosti libovolných úsudků v PL1. <br />
+💚 Kontrolu správnosti kategorických sylogismů. (Aristetol. sylogismy) <br />
 💚 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou unární. (P(x) řešíme s těmito predikáty) <br />
 💥 Ověřování platnosti úsudků v logikách vyšších řádů než PL1. <br />
 💥 Kontrolu správnosti úsudků, které jsou složeny z elementárních výroků VL. <br />
@@ -483,7 +489,9 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 22) Která z následujících tvrzení jsou správné?
 💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
 💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
-💥 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa. <br />
+💚 Formule ∀xPx⊃¬Qx definuje v dané interpretaci vazbu „být disjunktem“ … P a Q <br />
+💚 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa.
+💚 Každá formule tvaru P(x) s volnou proměnnou x definuje v dané interpretaci určitou podmnožinu universa.
 💥 Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
 
 ### 23) Určete, co platí pro klausuli:
@@ -528,6 +536,9 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou metodu nikoli rezoluční. <br />
 💚 Formule VL má 2 na "n" možných valuací, kde "n" je počet výrokových proměnných v dané formuli. <br />
 💚 Pokud výrokově logický úsudek zapíšeme ve tvaru formule (P1 ∧ P2 ∧ … ∧ Pn) ⊃ Z, kde P1 až Pn jsou premisy a Z je závěr, pak je úsudek platný tehdy a jen tehdy, když je tato formule pravdivá v každé valuaci. <br />
+💚 Metoda sémantických tabel je grafická metoda aplikace distributivního zákona. <br />
+💚 Metoda ověřování tautologičnosti formule sémantickým sporem ověřuje, zda existuje 
+ valuace, která splňuje negovanou formuli. <br />
 💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
 💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
 💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
@@ -550,6 +561,22 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely. 
 💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
+
+### 30) Která z následujících formulí patří mezi zákony komutace kvantifikátorů?
+💚 ∀x∀y A(x,y) ≡ ∀y∀x A(x,y)
+
+### 30) Formule F je splnitelná v interpretaci
+💚 Právě tehdy když existuje ohodnocení e proměnných takové, že platí |= F[e] v interpretaci I <br />
+💚 Právě když existuje ohodnocení e proměnných takových, že F[e] je pravdivá v dané interpretační struktuře <br />
+💚 Právě když existuje ohodnocení e promenných takový, že formule F je v tomto ohodnocení v dané interpretaci pravdivá
+
+### 31) Algebraickou strukturu (R \ {0}, *) s operací násobení Nad množinou reálných čísel.
+💚 Operace * je uzavřená na nosiči Struktura (Z\{0}, *) je podgrupou této struktury <br />
+💚 Operace * je komutativní
+
+### 32) Která z následujících tvrzení o formálních teoriích jsou správné:
+💚 Axiomy konzistentní teorie musí být vzájemně bezesporné <br />
+💚 Axiomy teorie jsou nezávislé, když žádný axiom není dokazatelný z jiných axiomu
 
 [Link / skok úplně nahoru](#předmluva)
 <br />
