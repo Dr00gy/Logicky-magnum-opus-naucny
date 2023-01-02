@@ -10,7 +10,7 @@ písmenko) Podkapitola <br />
 💚 Správná odpověď (otázky) <br />
 💥 Špatná odpověď (otázky) <br />
 
-[Link / skok rovnou k otázkám](#otázky-vysvětlení-k-individuálním-odpovědím-v-závorce)
+[Link / skok rovnou k otázkám](#otázky-vysvětlení-k-individuálním-odpovědím-v-závorce-špatné-odpovědi-mohou-chybět-ale-nejdůležitější-jsou-stejně-odpovědi-správné-)
 <br />
 
 Spolu související části z kapitol budou zlinkovány. :) <br /><br />
