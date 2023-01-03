@@ -516,12 +516,12 @@ Judy je krásná. (platí pro PL a ne VL)
 
 ### 25) Která z následujících tvrzení platí pro rezoluční metodu ve VL?
 💚 Rezoluční metoda umožňuje prokázat platnost úsudku jak sporem, tak přímou metodou. <br />
-💚 V případě nepřímého důkazu tautologičnosti formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) pomocí rezoluční metody nedojde k odvození prázdné klausule. <br />
 💚 Platnost úsudku nezávisí na interpretaci. <br />
 💚 Pro důkaz pomocí rezoluční metody je nutné převést formuli do KNF. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF. <br />
-💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF.
+💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF. <br />
+💥 V případě nepřímého důkazu tautologičnosti formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) pomocí rezoluční metody nedojde k odvození prázdné klausule. (DOJDE!)
 
 ### 26) Určete, které z následujících tvrzení je pravdivé:
 💚 Pokud je množina A vlastní podmnožina množiny B, pak B má aspoň jeden prvek, který neleží v A. <br />
