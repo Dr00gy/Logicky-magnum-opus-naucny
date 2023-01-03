@@ -473,6 +473,7 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 20) Nechť A, B ⊨ C a A, C ⊨ D, pak:
 💚 Formule A je pravdivá ve všech modelech množiny formulí {B, C}. <br />
 💚 Formule D je pravdivá v každém modelu množiny formulí {A, C}. <br />
+💚 A,C ⊨ C <br />
 💥 Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé. <br />
 💥 Když není pravdivá formule D, tak není pravdivá ani A ani B.
 
@@ -490,8 +491,9 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
 💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
 💚 Formule ∀xPx⊃¬Qx definuje v dané interpretaci vazbu „být disjunktem“ … P a Q <br />
-💚 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa.
-💚 Každá formule tvaru P(x) s volnou proměnnou x definuje v dané interpretaci určitou podmnožinu universa.
+💚 Každá formule tvaru ∃xP(x) definuje v dané interpretaci určitou podmnožinu universa. <br />
+💚 Každá formule tvaru P(x) s volnou proměnnou x definuje v dané interpretaci určitou podmnožinu universa. <br />
+💚 když chceme rezoluční metodu použit v PL tak je nutno formuli dát to Skolemovy klauzulární formy. <br />
 💥 Formule ∀x[P(x) ⊃ ¬Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q.
 
 ### 23) Určete, co platí pro klausuli:
