@@ -406,7 +406,7 @@ Judy je krásná. (platí pro PL a ne VL)
 
 ### 13) Označte, které z následujících formulí jsou logicky pravdivé.
 💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] (přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!) <br />
-💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)] (ekvivalentní úprava) <br />
+💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)] (modely) <br />
 💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br /> (přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!) <br />
 💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)] (negace, přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!) <br />
 💚 A(x/y) ⊃ ∃xA(x) (term t je substituovatelný za proměnnou x) <br />
