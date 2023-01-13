@@ -309,7 +309,7 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 ### 1) Pro formuli $p \supset (q \lor \neg q)$
 💚 Je splnitelná (v pravdivostní tabulce má aspoň jeden řádek na konci jedničku, tato formule je dokonce tautologie) <br />
 💚 Je ekvivalentní s formulí $(p \land q) \supset q$ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi) <br />
-💚 Je ekvivalentní s formulí $q \supset (\neg p \lor p) $ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi) <br />
+💚 Je ekvivalentní s formulí $q \supset (\neg p \lor p)$ (obě formule mají stejné výsledky pravdivostní tabulky – jsou tautologiemi) <br />
 💚 Je logicky pravdivá, neboť konsekvent implikace je v každé valuaci výrokové proměnné q pravdivý. <br />
 💥 Její negace je splnitelná formule (její negace je kontradikce, přotože původní je tautologie)
 
@@ -319,6 +319,7 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 💚 Lze nepřímo dokazovat platnost daného úsudku. (rezolučka umí dokazovat přímo i nepřímo) <br />
 💚 Lze parciálně ověřit tautologičnost formule. <br />
 💚 Lze nepřímo dokázat tautologičnost formule. <br />
+💚 Lze parciálně rozhodnout tautologičnost formule. <br />
 💥 Ověřujeme, zda závěr vyplývá z nespočetné množiny předpokladů (toto je case diagramů nebo VL, ale určitě ne PL)
 
 ### 3) Sémantická metoda ve VL
@@ -329,8 +330,9 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 
 ### 4) Mějme množiny A = {1,2,3}, B = {b} a relaci R. Která z následujících tvrzení jsou platná?
 💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se jedná o surjektivní zobrazení <br />
+💚 Pokud relace R je def jako podmnožina BxA: {[b,1],[b,2],[b,3]},nejedná o zobrazení. (pozor! místo A x B je tu B x A) <br />
 💚 Pokud relace R je definována jako podmnožina B x A $\cup$ A x B a jedná se o symetrickou relaci. Pokud je v relaci R dvojice [1,b], pak se v relaci R nachází rovněž dvojice [b,1] <br />
-💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se nejedná o injektivní zobrazení
+💚 Pokud relace R je definována jako podmnožina A x B: {[1,b], [2,b], [3, b]}, pak se nejedná o injektivní zobrazení <br />
 💚 Pokud relace R je def jako podmnožina BxA sjednoceno s AxB a jedná se o symetrickou relaci, potom je v relaci R dvojice [1,b], pak se v relaci R nachází rovněž dvojice [b,1].
 
 ### 5) Které z tvrzení platí pro formuli $\forall x \forall y$ [P(x,y) $\supset$ Q(f(x),y)]
@@ -340,7 +342,9 @@ Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br
 💚 Má jako svůj model například tuto interpretační strukturu: <br />
 U = N (množina přir. čísel), <br />
 P={[x,y]|x=y}, Q={[x,y]|x>=y}, <br />
-f' ... druhá mocnina.
+f' ... druhá mocnina. <br />
+💚 Relace Q funkční symbol se interpretuje jako totální funkce. <br />
+💚 Funkční symbol se interpretuje jako totální funkce.
 
 ### 6) Metoda Vennových diagramů
 💚 Je sémantická metoda, která ověřuje, zda závěr je platný ve všech modelech předpokladů <br />
@@ -361,11 +365,14 @@ f' ... druhá mocnina.
 Číslo 2 je dělitelné samo sebou beze zbytku. <br />
 💚 Je neplatný, protože závěr z premis nevyplývá (logika je jako AI, nechápe souvislost mezi tím, že 2 je „členem prvočísel“ a tím, že prvočísla, tedy i 2, jsou dělitelné samo sebou beze zbytku) <br />
 (TO ZNAMENÁ ŽE:) <br />
-💚 Je neplatný, protože formalizujeme-li jej, pak závěr není platný v libovolném modelu předpokladů
+💚 Je neplatný, protože formalizujeme-li jej, pak závěr není platný v libovolném modelu předpokladů. <br />
+💚 Má v určité interpretační struktuře premisy pravdivé i závěr pravdivý, ale není platný.
 
 ### 9) Které z tvrzení platí pro formuli ∀x[P(x) ⊃ Q(a,b)]
 💚 Formule [∃xP(x) ⊃ Q(a,b)] z ní vyplývá. <br />
+💚 Je ekvivalentní formuli [∃xP(x) ⊃ Q(a,b)] <br />
 💚 Je ekvivalentní s formulí [¬∃xP(x) ⋁ Q(a,b)] (mají stejné modely) <br />
+💚 Má stejné modely jako formule [¬∃xP(x) ⋁ Q(a,b)] <br />
 💥 Je ekvivalentní s formulí [∀xP(x) ⊃ Q(a,b)] <br />
 💥 Je ekvivalentní s formulí [¬∃xP(x) ⊃ Q(a,b)] <br />
 💥 Její negací je formule ∀x[P(x) ⋀ ¬Q(a,b)] (není ani změněný kvantifikátor)
@@ -396,8 +403,10 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Zobrazení není relace (relace je zobrazení)
 
 ### 12)	Které z následujících systémů spojek ve VL jsou úplné:
+💚 negace, konjunkce <br />
 💚 negace, disjunkce <br />
 💚 negace, implikace <br />
+? neg, konjunkce, disjunkce (spíše 💚) <br />
 💥 disjunkce, implikace <br />
 💥 konjunkce, disjunkce <br />
 💥 konjunkce, implikace <br />
@@ -440,13 +449,26 @@ Judy je krásná. (platí pro PL a ne VL)
 
 ### 17) Určete, které z následujících tvrzení jsou pravdivé:
 💚 Relace použité pro interpretaci v PL1 musí být homogenní. <br />
+💚 Princip unifikace v obecné (…), kdy je |- ∀x Px⊃P(X/term). <br />
+💚 Metodou sémantických tabel využívá disjunktivních zákonu. <br />
 💚 Libovolnou n-argumentovou funkci lze vyjádřit pomocí n+1 argumentové relace. <br />
 💚 Správnost úsudku je dána pouze logickou strukturou premis a závěru. <br />
+💚 Správnost úsudku ověřujeme bez empirického zkoumání stavu světa. <br />
 💚 PL1 pracuje pouze s totálními funkcemi, tj. takovými, kdy každý vzor má právě jeden obraz. <br />
 💚 Metodou přirozené dedukce v PL 1 lze dokazovat jak přímo, tak i nepřímo. <br />
 💚 Pokud je množina A vlastní podmnožinou B, pak B má alespoň jeden prvek, který neleží v A. <br />
 💚 Při použití obecné rezoluční metody obecně vedeme důkaz nepřímo. <br />
 💚 Sound argument je takový, jehož premisy jsou pravdivé, tedy i závěr je pravdivý. <br />
+💚 Pokud je množina A vlastní podmnožina množiny B, pak B má aspoň jeden prvek, který neleží v A. <br />
+💚 Všechny podmnožiny relace A = {<1,2>,<2,4>,<3,6>} jsou relacemi. <br />
+💚 Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách. <br />
+💚 Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její prvky patří i množina M. <br />
+💚 Pokud v metodě přirozené dedukce zavedeme hypotézu H a odvodíme z ní formuli A, pak jako řádný krok důkazu musíme zavést formuli H ⊃ A <br />
+💚 Funkce dělení na celých číslech je parciální. <br />
+💚 Relace je podmnožina kartézského součinu. <br />
+💚 Následující relace nad celými čísly jsou totální funkce: sčítání, násobení, rozdíl. <br />
+💚 Pro automatizované ověření platnosti úsudku je důležitá jeho správná formalizace. <br />
+💚 Hilbertův kalkul je úplný kalkul stejně jako metoda přirozené dedukce. <br />
 💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. (neplatí, potvrzeno Menšíkem) <br />
 💥 Predikátová logika druhého řádu je méně expresivní než PL1. (druhý řád je víc expresivní - logicky) <br />
 💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. <br />
@@ -454,9 +476,16 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Funkce je libovolná podmnožina kartézského součinu. <br />
 💥 Relace je pouze zprava jednoznačné zobrazení. <br />
 💥 Funkce použité pro interpretaci v PL1 mohou být parciální, tj. takové, kdy každý vzor má minimálně jeden obraz. (parciální = nemá žádný obraz)
+💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
+💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
+💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické. <br />
+💥 Průnik dvou libovolných množin je vždycky neprázdný.
 
 ### 18) Nechť F je formule VL obsahující literály a, b, c, pak F:
 💚 Má celkem 8 ohodnocení. (2 na počet literálů) <br />
+💚 Je splnitelná, pokud je tautologií. <br />
+💚 Je nesplnitelná, pokud nemá model. <br />
+💚 Může být převedena do úplné konjunktivní normální formy, pokud není tautologíí.
 💥 Je tautologií, pokud existuje alespoň jeden model. (musí být všechny model) <br />
 💥 Je sporná, pokud aspoň jedno ohodnocení není modelem. <br />
 💥 Je kontradikcí, pokud nemá alespoň jeden literál pravdivé ohodnocení. (neřešíme literály, ale modely a nesmí být žádný model)
@@ -488,6 +517,9 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 A, B, C, D jsou nutně pravdivé
 
 ### 22) Která z následujících tvrzení jsou správné?
+💚 Žádná valuace kde q=0 a r=0, není modelem formule (p⊃q) ⋀ (q ∨ r) <br />
+💚 Jedním z modelů formule (p⊃q) ⋀(q ∨ r) je valuace p=0, q=0, r=1 <br />
+💚 Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r) <br />
 💚 Formule ∀x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
 💚 Formule ∃x[P(x) ⊃ Q(x)] definuje v dané interpretaci vztah „být podmnožinou“ mezi obory pravdivosti P a Q. (pokud je členem P tak je členem Q) <br />
 💚 Formule ∀xPx⊃¬Qx definuje v dané interpretaci vazbu „být disjunktem“ … P a Q <br />
@@ -519,34 +551,25 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 25) Která z následujících tvrzení platí pro rezoluční metodu ve VL?
 💚 Rezoluční metoda umožňuje prokázat platnost úsudku jak sporem, tak přímou metodou. <br />
 💚 Platnost úsudku nezávisí na interpretaci. <br />
+💚 V případě nepřímého důkazu tautologičnosti pomocí rezoluční metody formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) dojde k odvození prázdné klausule. <br />
 💚 Pro důkaz pomocí rezoluční metody je nutné převést formuli do KNF. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UKNF. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do UDNF. <br />
 💥 Pro důkaz pomocí rezoluční metody je nutné převést formuli do DNF. <br />
 💥 V případě nepřímého důkazu tautologičnosti formule ((a ⊃ b) ∧ (b ⊃ c) ⊃ (a ⊃ c) pomocí rezoluční metody nedojde k odvození prázdné klausule. (DOJDE!)
 
-### 26) Určete, které z následujících tvrzení je pravdivé:
-💚 Pokud je množina A vlastní podmnožina množiny B, pak B má aspoň jeden prvek, který neleží v A. <br />
-💚 Operaci rozdíl libovolných dvou množin lze vyjádřit pomocí operace doplňku na těchto dvou množinách. <br />
-💚 Potenční množina množiny M je množina všech podmnožin množiny M, tedy mezi její prvky patří i množina M. <br />
-💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
-💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
-💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické. <br />
-💥 Průnik dvou libovolných množin je vždycky neprázdný.
-
-### 27) Která tvrzení platí:
+### 26) Která tvrzení platí:
 💚 Pokud mě zajímá podoba výsledné pravdivostní funkce dané formule, použiji tabulkovou metodu nikoli rezoluční. <br />
 💚 Formule VL má 2 na "n" možných valuací, kde "n" je počet výrokových proměnných v dané formuli. <br />
 💚 Pokud výrokově logický úsudek zapíšeme ve tvaru formule (P1 ∧ P2 ∧ … ∧ Pn) ⊃ Z, kde P1 až Pn jsou premisy a Z je závěr, pak je úsudek platný tehdy a jen tehdy, když je tato formule pravdivá v každé valuaci. <br />
 💚 Metoda sémantických tabel je grafická metoda aplikace distributivního zákona. <br />
-💚 Metoda ověřování tautologičnosti formule sémantickým sporem ověřuje, zda existuje 
- valuace, která splňuje negovanou formuli. <br />
+💚 Metoda ověřování tautologičnosti formule sémantickým sporem ověřuje, zda existuje valuace, která splňuje negovanou formuli. <br />
 💥 Důkaz pomocí rezoluční metody lze vést ve VL pouze přímo. <br />
 💥 Rezoluční pravidlo lze na formuli F uplatňovat, pouze když je formule převedena do úplné normální konjunktivní formy. <br />
 💥 Rezoluční pravidlo ve VL zachovává splnitelnost, ale nikoliv pravdivost. <br />
 💥 Každá tautologie tvoří úplnou konjunktivní i disjunktivní normální formu.
 
-### 28) Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
+### 27) Mějme množiny A, B, C. Pak množina (A ∩ (B ∪ C):
 💚 Je prázdná, pokud A neobsahuje alespoň jeden prvek z B nebo z C. <br />
 💚 Je prázdná vždy, když (B ∪ C) je prázdná. <br />
 💚 Je prázdná vždy když A je prázdná. <br />
@@ -556,7 +579,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Je vždy prázdná. <br />
 💥 Je neprázdná, pokud každá z množin A, B, C je neprázdná.
 
-### 29) Co následujícího platí? (je fajn si tu udělat pravdivostní tabulku)
+### 28) Co následujícího platí? (je fajn si tu udělat pravdivostní tabulku)
 💚 Jedním z modelů formule (p ⊃ q) ∧ (q ∨ r) je valuace p=0, q=0, r=1. <br />
 💚 Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
@@ -564,7 +587,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely. 
 💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 
-### 30) Která z následujících formulí patří mezi zákony komutace kvantifikátorů?
+### 29) Která z následujících formulí patří mezi zákony komutace kvantifikátorů?
 💚 ∀x∀y A(x,y) ≡ ∀y∀x A(x,y)
 
 ### 30) Formule F je splnitelná v interpretaci
@@ -579,6 +602,18 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 32) Která z následujících tvrzení o formálních teoriích jsou správné:
 💚 Axiomy konzistentní teorie musí být vzájemně bezesporné <br />
 💚 Axiomy teorie jsou nezávislé, když žádný axiom není dokazatelný z jiných axiomu
+
+### 33) Mezi syntaktické metody v PL 1:
+💚 Formální systém Hilbertova typu. <br />
+💚 Obecná rez. metoda, Robinson. <br />
+(sémantické metody: vénovy diagramy)
+
+### 34) Mezi syntaktické metody ve VL:
+💚 Rezoluční metoda P,N, sémanticka tabla. <br />
+💚 Ekv. upravy, přirozena. <br />
+(sémantické metody: vénovy diagramy) <br />
+(sémantické metody: spor, tabulka?) <br />
+
 
 [Link / skok úplně nahoru](#předmluva)
 <br />
