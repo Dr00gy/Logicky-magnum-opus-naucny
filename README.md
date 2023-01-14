@@ -186,8 +186,8 @@ Množiny jsou identické, právě tehdy a jen tehdy, když mají stejné prvky (
 *	$a \notin$ {{a, b}} ALE {a,b} $\in$ {{a,b}}
 *	$\varnothing \in$ { $\varnothing$ , { $\varnothing$ },{{ $\varnothing$ }}}, ale neleží pro žádné a,b,c..
 *	{a, b} = {b, a} = {a,b,a} ALE {a,b} $\ne$ {{a, b}} $\ne$ {a, {b, a}}
-*	$\varnothing \notin \varnothing$ ALE $\varnothing \subseteq \varnothing$
-*	{a} $\subseteq$ {a}
+*	$\varnothing \notin \varnothing$ ALE $\varnothing \subseteq \varnothing$ (prázdná množina je podmnožinou každé množiny, i samo sebou)
+*	{a} $\subseteq$ {a} (každá množina je svou podmnožinou)
 *	$\varnothing \subseteq$ {a} ALE $\varnothing \notin$ {a}
 *	{a} $\nsubseteq$ {{a}}
 
@@ -356,7 +356,8 @@ f' ... druhá mocnina. <br />
 💚 Rozdíl množiny A a B je prázdná množina (V množině A by nic nezbylo - dle definice podmnožiny) <br />
 💚 Doplněk množiny B leží v doplňku množiny A (doplněk je odečítání druhý od prvního) <br />
 💚 Všechny prvky množiny A leží v množině B i v případě, že A je prázdná množina. <br />
-💚 Prvek leží v množině A pouze když leží v množině B.
+💚 Prvek leží v množině A pouze když leží v množině B. <br />
+💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak.
 
 ### 8) Následující úsudek:
 Číslo 2 je nezáporné. <br />
@@ -415,6 +416,8 @@ Judy je krásná. (platí pro PL a ne VL)
 
 ### 13) Označte, které z následujících formulí jsou logicky pravdivé.
 💚 [∀xP(x) ∨ ∀xQ(x)] ⊃ ∀x[P(x) ∨ Q(x)] (přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!) <br />
+💚 ∀x P(x) ⊃ (Q(y)⊃∀x P(x))
+💚 ∀x [Px ⋀ Q(x)]≡[∀x Px ⋀ ∀xQ(x)]
 💚 ¬∃x[A ⊃ B(x)] ≡ ∀x[¬A ∨ B(x)] (modely) <br />
 💚 ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] <br /> (přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!) <br />
 💚 ¬∃x[P(x) ∧ Q(x)] ⊃ [∀xP(x) ∨ ∀xQ(x)] (negace, přesouvání kvantifikátoru jako krok 6 skolemizace - zákon distribuce kvantifikátorů!!) <br />
@@ -423,7 +426,13 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 ¬[∀xP(x) ⊃ (Q(y) ⊃ ∀xP(x))] ≡ [∃x¬P(x) ∨ (Q(y) ∧ ∃xP(x))] <br />
 💥 ∀xA(x) ≡ ∃xA(x) (není to samé) <br />
 💥 ∀x∀yA(x,y) ⊃ ∀x∀y¬A(x,y) <br />
-💥 ∃x∀yA(x,y) ≡ ∃y∀xA(x,y) (nemůžeme vyměnit proměnné v kvantifikátorech)
+💥 ∃x∀yA(x,y) ≡ ∃y∀xA(x,y) (nemůžeme vyměnit proměnné v kvantifikátorech) <br />
+(logicky proveditelné / platné: <br />
+💚 ∀xPx ⊃ Qy ⊃ ∀xPx <br />
+💚 [∀xPx ∨ ∀xQx] ⊃ ∀xPx ∨ Qx <br />
+💚 ∀x[Px ⋀ Q(x)] ≡ [∀xPx ⋀ ∀xQ(x)] <br />
+💚 [¬∃x∀yPx,y ⊃ ∀y∃xPxy] ≡ [∃x∀y Px,y ⋀ ∃y∀x¬P(x,y)] <br />
+)
 
 ### 14) Určete, které z následujících úsudků jsou logicky platné:
 💚 Venku prší. Karel je veselý. Venku prší. (pokud je závěr v předpokladu, tak vyplývá) <br />
@@ -440,12 +449,17 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Lední hokej je velmi zajímavý sport pro všechny věkové kategorie. (subjektivní a není tam ani spojka) <br />
 
 ### 16) 🔴 Nechť PU a QU jsou obory pravdivosti predikátů P, Q. Pak:
-💚 Je-li formule ∀xPx⊃Qx v dané interpretaci pravdivá, pak platí, že PU ⊆ QU <br />
+💚 Je-li formule ∀xPx ⊃ Qx v dané interpretaci pravdivá, pak platí, že PU ⊆ QU <br />
+💚 Je-li formule ∀x[P(x) ∧ Q(x)] v dané interpretaci pravdivá, pak platí, že PU = QU. <br />
+💚 Je-li formule ∃x[P(x) ∧ Q(x)] v dané interpretaci pravdivá, pak platí, že (PU ∩ QU) je neprázdný. <br />
+💚 Je-li formule ∃x[P(x ⊃ Q(x)] logicky pravdivá, pak PU není identické s universem U nebo QU = U. <br />
+💚 Formule ∀x[P(x) ⊃ Q(x)] ⊃ [∃xP(x) ⊃ ∃xQ(x)] je logicky pravdivá, neboť jeli PU ⊂ QU, pak je-li P U Q neprázdné, je také QU neprázdné. <br />
+💚 Formule ∀x[P(x) ⊃ Q(x)] ⊃ [∀xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU = U, je také QU. <br />
 💚 Formule ∀x[P(x) ⊃ Q(x)] ≡ [∃xP(x) ⊃ ∀xQ(x)] je logicky pravdivá, neboť je-li PU ⊆ QU, pak je-li PU neprázdné, tak QU = U. <br /> <br />
 💚 Formule [∃xP(x) ∧ ∃xQ(x)] ⊃ ∃x[P(x) ∧ Q(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdný, pak musí být jak PU, tak QU neprázdné. <br />
 💚 Formule [∀xP(x) ∨ ∀xQ(x)] ≡ ∀x[P(x) ∨ Q(x)] je logicky pravdivá, neboť je-li PU = U nebo QU = U, pak je také sjednocení (PU ∪ QU) = U. <br />
 💚 Formule ∃x[P(x) ∧ Q(x)] ⊃ [∃xP(x) ∧ ∃xQ(x)] je logicky pravdivá, neboť je-li (PU ∩ QU) neprázdné, pak musí být jak PU, tak QU neprázdné. <br />
-💥 Formule ∃x[P(x) ∨ Q(x)] ≡ [∃xP(x) ∨ ∃xQ(x)] je logicky pravdivá, protože je-li (PU ∪ QU) neprázdné, pak musí být PU nebo QU neprázdné množiny a naopak.
+💚 Formule ∃x[P(x) ∨ Q(x)] ≡ [∃xP(x) ∨ ∃xQ(x)] je logicky pravdivá, protože je-li (PU ∪ QU) neprázdné, pak musí být PU nebo QU neprázdné množiny a naopak.
 
 ### 17) Určete, které z následujících tvrzení jsou pravdivé:
 💚 Relace použité pro interpretaci v PL1 musí být homogenní. <br />
@@ -541,6 +555,8 @@ Judy je krásná. (platí pro PL a ne VL)
 ### 24) Která z následujících tvrzení jsou platná pro vztahy mezi množinami:
 💚 Množina A je identická množině B, právě když mají stejné prvky, to jest, když všechny prvky náležící množině A náleží také množině B a naopak. <br />
 💚 Množina A je vlastní podmnožinou množiny B, značíme A ⊂ B, právě tehdy, když každý prvek z A je také prvkem B a ne naopak. <br />
+💚 Prázdná množina je podmnožinou každé množiny. <br />
+💚 Pokud je množina A vlastní podmnožinou množiny B, pak B má aspoň jeden, který neleží v A. <br />
 💥 Z definice podmnožiny plyne, že ne každá množina je svou podmnožinou. <br />
 💥 Množina A se rovná množině B, právě když každý prvek A je také prvkem B a ne naopak. <br />
 💥 Prázdná množina není podmnožinou žádné množiny. <br />
@@ -588,7 +604,9 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 
 ### 29) Která z následujících formulí patří mezi zákony komutace kvantifikátorů?
-💚 ∀x∀y A(x,y) ≡ ∀y∀x A(x,y)
+💚 ∀x∀y A(x,y) ≡ ∀y∀x A(x,y) <br />
+💚 ∃x∀y A(x,y) ⊃ ∀y∃x A(x,y) <br />
+💚 ∃x∃y A(x,y) ⊃ ∃y∃x A(x,y)
 
 ### 30) Formule F je splnitelná v interpretaci
 💚 Právě tehdy když existuje ohodnocení e proměnných takové, že platí |= F[e] v interpretaci I <br />
@@ -596,7 +614,8 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Právě když existuje ohodnocení e promenných takový, že formule F je v tomto ohodnocení v dané interpretaci pravdivá
 
 ### 31) Algebraickou strukturu (R \ {0}, *) s operací násobení Nad množinou reálných čísel.
-💚 Operace * je uzavřená na nosiči Struktura (Z\{0}, *) je podgrupou této struktury <br />
+💚 Operace * je uzavřená na nosiči <br />
+💚 Struktura (Z\{0}, *) je podgrupou této struktury <br />
 💚 Operace * je komutativní
 
 ### 32) Která z následujících tvrzení o formálních teoriích jsou správné:
@@ -614,7 +633,51 @@ Judy je krásná. (platí pro PL a ne VL)
 (sémantické metody: vénovy diagramy) <br />
 (sémantické metody: spor, tabulka?) <br />
 
+### 35) Která z následujících formulí patří mezi logické zákony?
+💚 ∀x∀y A(x,y) ≡ ∀y∀x A(x,y) <br />
+💚 ∃x∀y A(x,y) se nerovná ∃y ∀x A(x,y) <br />
+💚 ∀xA(x) ⊃ A(x/t) (term t je substituovatelný za proměnnou x) <br />
+💚 A(x/t) ⊃ ∃xA(x) <br />
+💚 |= ∀xA(x) ⊃ A(y) dictum de omni specielně <br />
+💚 |= ∀xA(x) ⊃ A(x/t) pravidlo konkretizace <br />
+💚 |= A(y) ⊃ ∃xA(x) <br />
+💚 |= ¬∀xA(x) ≡ ∃x¬A(x) <br />
+💚 |= ¬∃xA(x) ≡ ∀x¬A(x)
 
+### 36) Zákony distribuce kvantifikátorů:
+💚 |= ∀x [A(x) ⊃ B(x)] ⊃ [∀xA(x) ⊃∀xB(x)] <br /> 
+💚 |= ∀x [A(x) ⊃ B(x)] ⊃ [∃xA(x) ⊃∃xB(x)] <br />
+💚 |= ∀x [A(x) ∧ B(x)] ≡ [∀xA(x) ∧∀xB(x)] <br />
+💚 |= ∃x [A(x) ∧ B(x)] ⊃ [∃xA(x) ∧∃xB(x)] <br />
+💚 |= [∀xA(x) ∨∀xB(x)] ⊃∀x [A(x) ∨ B(x)] <br />
+💚 |= ∃x [A(x) ∨ B(x)] ≡ [∃xA(x) ∨∃xB(x)]
+
+### 37) Zákony prenexních operací ● |= ∀x [A ⊃ B(x)] ≡ [A ⊃∀xB(x)]
+💚 |= ∃x [A ⊃ B(x)] ≡ [A ⊃∃xB(x)] <br />
+💚 |= ∀x [B(x) ⊃ A] ≡ [∃xB(x) ⊃ A] <br />
+💚 |= ∃x [B(x) ⊃ A] ≡ [∀xB(x) ⊃ A] <br />
+💚 |= ∀x [A ∧ B(x)] ≡ [A ∧∀xB(x)] <br />
+💚 |= ∃x [A ∧ B(x)] ≡ [A ∧∃xB(x)] <br />
+💚 |= ∀x [A ∨ B(x)] ≡ [A ∨∀xB(x)] <br />
+💚 |= ∃x [A ∨ B(x)] ≡ [A ∨∃xB(x)]
+
+### 38) Zákony komutace kvantifikátorů:
+💚 |= ∀x∀yA(x,y) ≡∀y∀xA(x,y) <br />
+💚 |= ∃x∃yA(x,y) ≡∃y∃xA(x,y) <br />
+💚 |= ∃x∀yA(x,y) ⊃∀y∃xA(x,y)
+
+### 39) Mezi vlastnosti binární relace R na množině A patří:
+💚 Reflexivita: ∀x R(x,x) <br />
+💚 Symetrie: ∀x∀y R(x,y) ⊃ R(y,x) <br />
+💚 Reflexivita: ∀x ¬R(x,x) <br />
+💚 Asymetrie ∀x∀y R(x,y)⊃¬R(y,x)
+
+### 40) Mezi vlastnosti binární relace R na množině A patří:
+💚 ⊨ ∀x[B(x) ⊃ A] ≡ [∃xB(x) ⊃ A] <br />
+💚 ⊨ ∀xA(x) ⊃ A(y) <br />
+💚 ⊨ ∃x[A(x) ∨ B(x)] ≡ [∃xA(x) ∨ ∃xB(x)]
+
+<br />
 [Link / skok úplně nahoru](#předmluva)
 <br />
 [Link / skok na začátek otázek](#otázky-vysvětlení-k-individuálním-odpovědím-v-závorce-špatné-odpovědi-mohou-chybět-ale-nejdůležitější-jsou-stejně-odpovědi-správné-)
