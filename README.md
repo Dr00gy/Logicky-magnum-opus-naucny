@@ -679,5 +679,4 @@ Judy je krásná. (platí pro PL a ne VL)
 
 <br />
 [Link / skok úplně nahoru](#předmluva)
-<br />
-[Link / skok na začátek otázek](#otázky-vysvětlení-k-individuálním-odpovědím-v-závorce-špatné-odpovědi-mohou-chybět-ale-nejdůležitější-jsou-stejně-odpovědi-správné-)
+[Link / skok rovnou k otázkám](#otázky-vysvětlení-k-individuálním-odpovědím-v-závorce-špatné-odpovědi-mohou-chybět-ale-nejdůležitější-jsou-stejně-odpovědi-správné-)
