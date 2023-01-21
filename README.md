@@ -677,6 +677,6 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 ⊨ ∀xA(x) ⊃ A(y) <br />
 💚 ⊨ ∃x[A(x) ∨ B(x)] ≡ [∃xA(x) ∨ ∃xB(x)]
 
-<br />
 [Link / skok úplně nahoru](#předmluva)
+<br />
 [Link / skok rovnou k otázkám](#otázky-vysvětlení-k-individuálním-odpovědím-v-závorce-špatné-odpovědi-mohou-chybět-ale-nejdůležitější-jsou-stejně-odpovědi-správné-)
