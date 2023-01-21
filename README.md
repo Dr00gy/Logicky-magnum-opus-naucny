@@ -297,7 +297,7 @@ Aristetolova logika - logický čtverec might be helpful. <br />
 Součástí Aristetol. logiky jsou sylogismy a Vennovy diagramy. <br /><br /><br />
 
 
-🔵 ## SLOVA PANOVA (potvrzeno panem M)
+🔵 SLOVA PANOVA (potvrzeno panem M)
 *Jestliže jsou premisy i závěr pravdivý, pak je usudek platný.* NEPLATÍ!! 💥 <br /><br /><br />
 
 
