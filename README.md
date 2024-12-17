@@ -483,6 +483,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Následující relace nad celými čísly jsou totální funkce: sčítání, násobení, rozdíl. <br />
 💚 Pro automatizované ověření platnosti úsudku je důležitá jeho správná formalizace. <br />
 💚 Hilbertův kalkul je úplný kalkul stejně jako metoda přirozené dedukce. <br />
+💚 Tautologií v PL1 jsme schopni odhalit pomocí ekviv. úprav, kdy daná formule je transformovatelná obecně do formule ve tvaru A V ¬A. <br />
 💥 Jestliže jsou premisy i závěr pravdivé, pak je úsudek platný. (neplatí, potvrzeno Menšíkem) <br />
 💥 Predikátová logika druhého řádu je méně expresivní než PL1. (druhý řád je víc expresivní - logicky) <br />
 💥 Každý platný úsudek, který jsem schopni adekvátně formalizovat v PL1, jsme schopni adekvátně formalizovat i ve VL tak, že zůstane platným. <br />
@@ -493,6 +494,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Množiny jsou identické, právě když mají stejný počet prvků. <br />
 💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
 💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické. <br />
+💥 Pokud použijeme rezoluční pravidlo v PL1, tak výsledná rezolventa je ve sporu s klauzulemi, které do pravidla vstupují. <br />
 💥 Průnik dvou libovolných množin je vždycky neprázdný.
 
 ### 18) Nechť F je formule VL obsahující literály a, b, c, pak F:
@@ -514,9 +516,9 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Ověřování platnosti úsudků v PL1, pokud obsažené predikáty jsou aspoň binární.
 
 ### 20) Nechť A, B ⊨ C a A, C ⊨ D, pak:
-💚 Formule A je pravdivá ve všech modelech množiny formulí {B, C}. <br />
 💚 Formule D je pravdivá v každém modelu množiny formulí {A, C}. <br />
 💚 A,C ⊨ C <br />
+💥 Formule A je pravdivá ve všech modelech množiny formulí {B, C}. <br />
 💥 Pokud jsou formule A, B nepravdivé, pak je i C nepravdivé. <br />
 💥 Když není pravdivá formule D, tak není pravdivá ani A ani B.
 
