@@ -401,6 +401,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Pro automatizované ověření platnosti úsudku je důležitá jeho správná formalizace <br />
 💚 Hilbertův kalkul je úplný kalkul stejně jako metoda přirozené dedukce. <br />
 💥 Funkce sčítání reálných čísel je pouze parciální <br />
+💥 V případě, že u důkazu tautologičnosti formule F sporem pomocí Obecné rezoluční metody dojdeme ke sporu, tak daná formule F je tautologie <br />
 💥 Zobrazení není relace (relace je zobrazení)
 
 ### 12)	Které z následujících systémů spojek ve VL jsou úplné:
@@ -495,6 +496,7 @@ Judy je krásná. (platí pro PL a ne VL)
 💥 Pokud existuje nějaký prvek, který je v množině A a není v množině B, potom je B nutně podmnožinou množiny A. <br />
 💥 Pokud mají dvě množiny stejnou mohutnost, pak jsou identické. <br />
 💥 Pokud použijeme rezoluční pravidlo v PL1, tak výsledná rezolventa je ve sporu s klauzulemi, které do pravidla vstupují. <br />
+💥 Relace, která není celým kartézským součinem je funkce <br />
 💥 Průnik dvou libovolných množin je vždycky neprázdný.
 
 ### 18) Nechť F je formule VL obsahující literály a, b, c, pak F:
@@ -602,7 +604,8 @@ Judy je krásná. (platí pro PL a ne VL)
 💚 Každá valuace, pro kterou je q=1, je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Žádná valuace, pro kterou p=0 a q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 💥 Valuace p=1, q=0, r=1 je modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
-💥 Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely. 
+💥 Formule (p ⊃ q) ∧ (q ∨ r) má právě 2 modely. <br />
+💥 Formule (p ⊃ q) ∧ (q ∨ r) má 5 modelů. <br />
 💥 Žádná valuace, pro kterou q=0, není modelem formule (p ⊃ q) ∧ (q ∨ r). <br />
 
 ### 29) Která z následujících formulí patří mezi zákony komutace kvantifikátorů?
